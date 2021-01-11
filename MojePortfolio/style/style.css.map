@@ -1,0 +1,23 @@
+{
+    "version": 3,
+    "mappings": "AGAA,AAAA,CAAC,CAAC;EACE,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,UAAU,EAAE,UAAU;CAAG",
+    "sources": [
+        "../style.sass",
+        "../_variables.sass",
+        "../_mixins.sass",
+        "../_reset.sass",
+        "../_basic.sass",
+        "../_header.sass",
+        "../_nav.sass",
+        "../_aside.sass",
+        "../_slider.sass",
+        "../_contact.sass",
+        "../_project.sass",
+        "../_tech.sass",
+        "../_about.sass",
+        "../_message.sass",
+        "../_footer.sass"
+    ],
+    "names": [],
+    "file": "style.css"
+}
