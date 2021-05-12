@@ -1,0 +1,25 @@
+.goStart
+    position: fixed
+    bottom: 5%
+    right: 5%
+    background-color: $gray-bgc
+    width: 30px
+    height: 30px
+    @include mq(phablet)
+        height: 40px
+        width: 40px
+    @include mq(phablet)
+        height: 50px
+        width: 50px
+    @include mq(tablet-wide)
+        height: 60px
+        width: 60px
+    @include mq-land(tablet-wide)
+        height: 40px
+        width: 40px
+    .goStart__icon
+        @include position-center
+        color: $white-bgc
+        font-size: $font-xmedium
+    @include mq(tablet-wide)
+        font-size: 32px

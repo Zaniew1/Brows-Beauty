@@ -1,0 +1,124 @@
+.banner
+    @include flex-center
+    margin: 0 auto
+    width: 90vw
+    height: 30vh
+    background-color: $white-bgc
+    border-bottom: 10px solid $gold-bgc
+    min-height: 150px
+    min-width: 300px
+    @include mq(phablet)
+        height: 45vh
+        max-width: 680px
+
+    @include mq(tablet)
+        height: 35vh
+        border-bottom: 15px solid $gold-bgc
+    @include mq(tablet-wide)
+        height: 40vh
+    @include mq-land(phone)
+        height: 70vh
+        width: 85vw
+    @include mq-land(tablet)
+        height: 60vh
+        width: 90vw
+        min-height: 350px
+    @include mq-land(tablet-wide)
+        width: 90vw
+        height: 65vh
+        border-bottom: 25px solid $gold-bgc
+    @include mq-land(desktop)
+        width: 95vw 
+        height: 76vh
+    @include mq-land(desktop-wide)
+        height: 86vh
+    .banner__picture
+        width: 55%
+        height: 100%
+        z-index: 4
+        @include mq-land(tablet-wide)
+            width: 60%
+        @include mq-land(desktop)
+            width: 50%
+        @include mq-land(desktop-wide)
+            width: 55%
+        .banner__img
+            width: 100%
+            height: 100%
+    .banner__invitation
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        width: 45%
+        height: 100%
+        @include mq-land(desktop)
+            width: 50%
+        .banner__header
+            color: $gold-bgc
+            font-size: $font-big
+            font-family: $family-over
+            @include mq(phone)
+                font-size: 30px
+            @include mq(phablet)
+                font-size: 40px
+            @include mq(tablet)
+                font-size: 60px
+            @include mq(tablet-wide)
+                font-size: 70px
+            @include mq-land(phone)
+                font-size: 36px
+            @include mq-land(tablet)
+                font-size: 60px
+            @include mq-land(tablet-wide)
+                font-size: 70px
+            @include mq-land(desktop)
+                font-size: 80px
+            @include mq-land(desktop-wide)
+                font-size: 120px
+        .banner__name
+            text-transform: uppercase
+            font-weight: bold
+            letter-spacing: 2px
+            font-size: $font-xsmall
+            color: $gray-bgc
+            font-family: $family-rubik
+            @include mq(phone)
+                font-size: 12px
+            @include mq(phablet)
+                font-size: 14px
+            @include mq(tablet)
+                font-size: 22px
+            @include mq(tablet-wide)
+                font-size: 26px
+            @include mq-land(phone)
+                font-size: 14px
+            @include mq-land(tablet)
+                font-size: 20px
+            @include mq-land(tablet-wide)
+                font-size: 24px
+            @include mq-land(desktop)
+                font-size: 26px
+        .banner__button
+            display: none
+            background-color: $gold-bgc
+            color: $white-bgc
+            margin: 50px auto 0 auto
+            width: 15vw
+            height: 45px
+            font-family: $family-rubik
+            font-weight: bold
+            text-transform: uppercase
+            font-size: 14px
+            border: none
+            transition: .3s ease-in-out
+            @include mq(tablet-wide)
+                display: block
+            @include mq-land(tablet-wide)
+                display: block
+                .banner__button-link
+                    text-decoration: none
+                    color: $white-bgc
+            &:hover
+                background-color: $button-bgc
+                color: $white-bgc

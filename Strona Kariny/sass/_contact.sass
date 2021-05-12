@@ -1,0 +1,248 @@
+.contact
+    width: 100vw
+    @include mq-land(phone)
+        height: 245vh
+        margin-top: 10vh
+    @include mq-land (phablet)
+        height: 255vh
+    @include mq-land(tablet)
+        height: 185vh
+    @include mq-land(desktop-wide)
+        height: 160vh
+    .contact__invite
+        @include flex-center-column
+        height: 40vh
+        background-color: transparent
+        width: 100%
+        @include mq (tablet)
+            height: 25vh
+        @include mq-land(phone)
+            height: 50vh
+            margin-top: 5vh
+        @include mq-land(tablet)
+            margin-bottom: 30vh
+            height: 25vh
+        @include mq-land(desktop-wide)
+            height: 20vh
+            margin-bottom: 20vh
+        .contact__invite-line
+            font-size: 14px
+            color: $gold-bgc
+            padding-top: 20px
+            @include mq(tablet-wide)
+                font-size: 24px
+            @include mq-land(tablet-wide)
+                font-size: 24px
+        .contact__invite-header
+            position: relative
+            font-size: 24px
+            font-family: $family-playfair
+            font-weight: 400
+            margin: 40px 0
+            @include mq(tablet-wide)
+                font-size: 40px
+            @include mq-land(tablet-wide)
+                font-size: 40px
+            &::before
+                content: ""
+                display: block
+                position: absolute
+                left: 50%
+                transform: translate(-50%, -50%)
+                border-top: 1px solid $font-color
+                width: 40px
+                height: 20px
+                @include mq-land(tablet)
+                    left: -50%
+                    top: 85%
+                @include mq-land(tablet-wide)
+                    top: 75%
+            &::after
+                content: ""
+                display: block
+                position: absolute
+                left: 50%
+                transform: translate(-50%, -50%)
+                border-bottom: 1px solid $font-color
+                width: 40px
+                height: 30px
+                @include mq-land(tablet)
+                    left: 150%
+                    top: 10%
+                @include mq-land(tablet-wide)
+                    top: 30%
+    .contact__wrapper
+        position: relative
+        width: 100vw
+        height: 150vh
+        @include mq (tablet)
+            margin-top: 10vh
+            height: 70vh
+        @include mq-land(tablet)
+            margin-top: 10vh
+            height: 70vh
+        .contact__map
+            width: 90%
+            margin: 0 5%
+            height: 70vh
+            background-color: $white-bgc
+            @include mq (tablet)
+                position: absolute
+                top: 15%
+                left: 35%
+                transform: translate(-50%,-50%)
+                width: 60%
+                margin: 0 30% 0 10%
+                height: 50vh
+                z-index: 2
+            @include mq-land(phone)
+                margin: 5vh 10vw 0 10vw
+                height: 80vh
+                width: 80vw
+            @include mq-land(phablet)
+                margin: 5vh 5vw 0 5vw
+                height: 90vh
+                width: 90vw
+            @include mq-land(tablet)
+                position: absolute
+                top: 15%
+                left: 35%
+                transform: translate(-50%,-50%)
+                width: 50%
+                margin: 0 30% 0 10%
+                height: 70vh
+                z-index: 2
+            @include mq-land(desktop-wide)
+                width: 60%
+                height: 50vh
+        .contact__contact
+            @include flex-center-column
+            justify-content: space-around
+            background-color: $white-bgc
+            width: 90%
+            margin: 0 5%
+            height: 80vh
+            @include mq (tablet)
+                justify-content: space-around
+                flex-direction: row
+                align-items: center
+                position: absolute
+                top: 40%
+                left: 50%
+                transform: translate(-50%,-50%)
+                width: 70%
+                height: 60vh
+                padding-top: 350px
+            @include mq(tablet-wide)
+                padding-top: 400px
+            @include mq-land(phone)
+                margin-bottom: 15vh
+            @include mq-land(tablet)
+                flex-direction: row
+                align-items: center
+                position: absolute
+                top: 60%
+                left: 50%
+                transform: translate(-50%,-50%)
+                width: 50%
+                height: 90vh
+                padding-top: 260px
+            @include mq-land(tablet-wide)
+                height: 70vh
+                padding-top: 380px
+            @include mq-land(desktop-wide)
+                height: 50vh
+                padding-bottom: 160px
+            .contact__adress
+                @include flex-center-column
+                margin-top: 40px
+                text-align: center
+                @include mq(tablet-wide)
+                    margin-top: 50px
+                .contact__h2
+                    @include contact__h2
+                    @include mq (phablet)
+                        font-size: 19px
+                        padding-bottom: 20px
+                    @include mq(tablet-wide)
+                        font-size: 26px
+                    @include mq-land(phone)
+                        padding-bottom: 5px
+                        font-size: 14px
+                    @include mq-land(phablet)
+                        padding-bottom: 10px
+                        font-size: 16px
+                .contact__line
+                    @include contact__line
+                    @include mq (phablet)
+                        font-size: 16px
+                    @include mq(tablet-wide)
+                        font-size: 22px
+                    @include mq-land(phone)
+                        padding-bottom: 15px
+                        font-size: 12px
+                    @include mq-land(phablet)
+                        padding-bottom: 20px
+                        font-size: 14px
+            .contact__phone
+                @include flex-center-column
+                @include mq-land(tablet)
+                    padding-top: 5px
+                .contact__h2
+                    @include contact__h2
+                    @include mq (phablet)
+                        font-size: 19px
+                        padding-bottom: 20px
+                    @include mq(tablet-wide)
+                        font-size: 26px
+                    @include mq-land(phone)
+                        padding-bottom: 5px
+                        font-size: 14px
+                    @include mq-land(phablet)
+                        padding-bottom: 10px
+                        font-size: 16px
+                .contact__line
+                    @include contact__line
+                    @include mq (phablet)
+                        font-size: 16px
+                    @include mq(tablet-wide)
+                        font-size: 22px
+                    @include mq-land(phone)
+                        padding-bottom: 15px
+                        font-size: 12px
+                    @include mq-land(phablet)
+                        padding-bottom: 20px
+                        font-size: 14px
+            .contact__email
+                @include flex-center-column
+                margin-bottom: 50px
+                @include mq (tablet)
+                    margin-bottom: 0
+                @include mq-land(tablet)
+                    padding-top: 55px
+
+                .contact__h2
+                    @include contact__h2
+                    @include mq (phablet)
+                        font-size: 19px
+                        padding-bottom: 20px
+                    @include mq(tablet-wide)
+                        font-size: 26px
+                    @include mq-land(phone)
+                        padding-bottom: 5px
+                        font-size: 14px
+                    @include mq-land(phablet)
+                        padding-bottom: 10px
+                        font-size: 16px
+                .contact__line
+                    @include contact__line
+                    @include mq (phablet)
+                        font-size: 16px
+                    @include mq(tablet-wide)
+                        font-size: 22px
+                    @include mq-land(phone)
+                        padding-bottom: 15px
+                        font-size: 12px
+                    @include mq-land(phablet)
+                        padding-bottom: 20px
+                        font-size: 14px

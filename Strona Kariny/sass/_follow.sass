@@ -1,0 +1,57 @@
+.follow
+    @include flex-center
+    flex-direction: column
+    margin: 10vh auto
+    width: 80vw
+    height: 20vh
+    background-color: $white-bgc
+    transition: .4s ease-in-out
+    @include mq(tablet)
+        height: 15vh
+        width: 70vw
+    @include mq(tablet-wide)
+        width: 50vw
+        height: 10vh
+    @include mq-land(phone)
+        width: 50vw
+        height: 25vh
+    @include mq-land(tablet)
+        width: 30vw
+        height: 10vh
+        min-height: 80px
+    @include mq-land(desktop-wide)
+        width: 18vw
+    &:hover
+        cursor: pointer
+        background-color: $gold-bgc
+    &:hover .follow__link
+        color: #fff
+    &:hover .follow__icon
+        color: #fff
+    .follow__link
+        text-decoration: none
+        color: $font-color
+        .follow__line
+            font-size: $font-xsmall
+            font-family: $family-rubik
+            text-transform: uppercase
+            font-weight: 500
+            letter-spacing: 3px
+            text-align: center
+            font-weight: bold
+            line-height: 5
+            @include mq(phablet)
+                font-size: 14px
+            @include mq(tablet)
+                font-size: 16px
+                line-height: 4
+            @include mq(tablet-wide)
+                font-size: 18px
+                line-height: 3
+            @include mq-land(phone)
+                font-size: 10px
+                line-height: 3
+            .follow__icon
+                margin-right: 10px
+                @include mq(tablet-wide)
+                    font-size: 24px

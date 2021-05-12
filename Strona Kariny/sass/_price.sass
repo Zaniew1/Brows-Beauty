@@ -1,0 +1,99 @@
+.priceTag
+    @include flex-center-column
+    width: 100vw
+    background-color: $white-bgc
+    margin: 5vh auto
+    @include mq (tablet)
+        flex-direction: row
+        flex-wrap: wrap
+        width: 80vw
+        margin: 10vh auto
+    @include mq-land(phone)
+        width: 90vw
+        margin: 10vh auto
+    @include mq-land(tablet)
+        flex-direction: row
+        flex-wrap: wrap
+        width: 70vw
+        margin: 15vh auto
+    @include mq-land(tablet-wide)
+        width: 80vw
+        margin: 10vh auto
+    .price__header-wrapper
+        @include flex-center
+        width: 80vw
+        height: 15vh
+        margin: 0 auto
+        color: $font-color
+        border-bottom: 1px solid $gold-bgc
+        @include mq (tablet)
+            width: 70vw
+            height: 10vh
+        @include mq-land(phone)
+            width: 80vw
+            height: 25vh
+        @include mq-land(tablet)
+            width: 60vw
+            height: 20vh
+        @include mq-land(tablet-wide)
+            width: 70vw
+            height: 10vh
+        .price__header
+            font-family: $family-rubik
+    .price__div
+        display: flex
+        justify-content: space-between
+        align-items: center
+        height: 12vh
+        width: 80vw
+        margin: 0 auto
+        @include mq (tablet)
+            display: flex
+            justify-content: space-around
+            height: 15vh
+            flex-grow: 1
+            width: 30vw
+            margin: 0
+        @include mq-land(phone)
+            height: 20vh
+            width: 70vw
+        @include mq-land(tablet)
+            height: 13vh
+        @include mq-land(tablet-wide)
+            justify-content: space-between
+            height: 15vh
+            flex-grow: 1
+            width: 30vw
+            margin: 0
+        .price__line
+            padding: 0 15px 0 5px
+            font-family: $family-rubik
+            font-size: 12px
+            font-weight: bold
+            color: $font-color
+            @include mq (phone)
+                font-size: 18px
+            @include mq (tablet)
+                padding-left: 40px
+            @include mq (tablet-wide)
+                padding-left: 60px
+                font-size: 20px
+            @include mq-land(tablet)
+                padding-left: 10vw
+            @include mq-land(desktop)
+                font-size: 16px 
+                padding-right: 12vw
+        .price__price
+            font-family: $family-rubik
+            font-size: 16px
+            padding-right: 20px
+            color: $gold-bgc
+            @include mq (phone)
+                font-size: 18px
+            @include mq (tablet)
+                padding-left: 20px
+            @include mq (tablet-wide)
+                padding-left: 60px
+                font-size: 16px
+            @include mq-land(desktop)
+                padding-right: 5vw

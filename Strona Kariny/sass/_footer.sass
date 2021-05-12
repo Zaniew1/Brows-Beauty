@@ -1,0 +1,119 @@
+.footer
+    width: 100vw
+    .footer__contact
+        @include flex-center
+        flex-direction: column
+        width: 100vw
+        height: 40vh
+        background-color: $font-color
+        @include mq(phone)
+            height: 25vh
+        @include mq(tablet)
+            height: 10vh
+        @include mq-land(phablet)
+            height: 30vh
+        @include mq-land(tablet)
+            height: 12vh
+            min-height: 80px
+        @include mq-land(desktop-wide)
+            height: 10vh
+        .footer__list
+            display: flex
+            flex-direction: column
+            list-style-type: none
+            @include mq(tablet)
+                flex-direction: row
+            @include mq-land(phablet)
+                flex-direction: row
+            .footer__item
+                margin-top: 25px
+                @include mq(phone)
+                    margin-top: 20px
+                @include mq(tablet)
+                    margin: 0 25px 0 10px
+                @include mq-land(phone)
+                    margin-top: 15px
+                @include mq-land(phablet)
+                    margin: 0 0  0 20px
+                @include mq-land(tablet)
+                    margin-right: 40px
+                @include mq-land(tablet-wide)
+                    margin-right: 80px
+                @include mq-land(desktop-wide)
+                    margin: 0 150px
+                .footer__link
+                    color: $white-bgc
+                    font-family: $family-rubik
+                    font-size: $font-small
+                    text-decoration: none
+                    @include mq(phablet)
+                        font-size: 16px
+                    @include mq(tablet-wide)
+                        font-size: 20px
+                    @include mq-land(tablet)
+                        font-size: 14px
+                    @include mq-land(desktop-wide)
+                        font-size: 12px
+                    &:hover
+                        color: $gold-bgc
+                        cursor: pointer
+                        transition: ease-in-out .3s
+                    .footer__icon
+                        font-size: $font-medium
+                        color: $gold-bgc
+                        padding-right: 15px
+                        @include mq(phablet)
+                            font-size: 18px
+                        @include mq(tablet-wide)
+                            font-size: 24px
+                        @include mq-land(tablet)
+                            font-size: 20px
+    .footer__copyright
+        margin: 0px
+        width: 100vw
+        background-color: $gold-bgc
+        .footer__socials
+            padding: 5px 0 5px 0
+            .footer__socials-list
+                @include flex-center
+                list-style: none
+                .footer__socials-item
+                    padding: 10px 5px 0 5px
+                    .footer__socials-link
+                        color: $bgc-color
+                        width: 20px
+                        height: 20px
+                                                                     
+                        .footer__socials-icon
+                            font-size: $font-medium
+                            margin-right: 20px
+                            @include mq(tablet-wide)
+                                font-size: 26px
+                            @include mq-land(tablet)
+                                font-size: 20px
+                            &:hover
+                                color: #c13584
+                                transition: ease-in-out .3s
+                        .footer__socials-icon--two
+                            &:hover
+                                color: #3b5998
+                                transition: ease-in-out .3s
+        .footer__signature
+            .footer__author
+                margin: 0
+                font-size: $font-small
+                padding: 0
+                line-height: 3
+                color: $white-bgc
+                text-align: center
+                font-family: $family-rubik
+                @include mq(phablet)
+                    font-size: 16px
+                @include mq(tablet-wide)
+                    font-size: 20px
+                @include mq-land(tablet)
+                    font-size: 14px
+                @include mq-land(tablet-wide)
+                    font-size: 16px
+                @include mq-land(desktop-wide)
+                    font-size: 12px

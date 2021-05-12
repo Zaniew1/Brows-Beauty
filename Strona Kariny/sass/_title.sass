@@ -1,0 +1,32 @@
+.title
+    @include flex-center
+    flex-direction: column
+    width: 100vw
+    height: 25vh
+    background-color: $white-bgc
+    margin: 0 auto
+    @include mq-land(tablet-wide)
+        width: 95vw
+    .title__header
+        font-family: $family-playfairSC
+        font-size: $font-big
+        font-weight: lighter
+    .title__wrapper
+        @include flex-center
+        .title__link
+            text-decoration: none
+            .title__line
+                font-size: $font-small
+                font-family: $family-rubik
+                color: $gold-bgc
+                &:hover
+                    color: $font-color
+                    transition: ease .3s
+        .title__line
+                font-size: $font-small
+                font-family: $family-rubik
+                color: $gold-bgc
+        .title__span
+            padding: 10px
+
+ 

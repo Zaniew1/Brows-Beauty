@@ -1,0 +1,70 @@
+.picture
+    @include flex-center
+    flex-wrap: wrap
+    flex-grow: 1
+    height: 135vw
+    width: 90vw
+    margin: 10vh auto
+    @include mq(tablet-wide)
+        height: 15vh
+        width: 100%
+    @include mq-land(phone)
+        height: 60vw
+    @include mq-land(tablet)
+        height: 50vw
+        width: 80vw
+    @include mq-land(tablet-wide)
+        height: 20vh
+        width: 90%
+    @include mq-land(desktop-wide)
+        width: 80%
+        height: 25vh
+    .picture__wrapper
+        position: relative
+        width: 50%
+        height: 33.333333%
+        background-color: $white-bgc
+        @include mq(tablet-wide)
+            width: calc( 100%/6)
+            height: 100%
+        @include mq-land(phone)
+            width: calc(100%/3)
+            height: 50%
+        @include mq-land(tablet-wide)
+            width: calc( 100%/6)
+            height: 100%
+        .picture__link
+            position: absolute
+            width: 100%
+            height: 100%
+            cursor: pointer
+            background-position: center
+            background-size: cover
+            transition: 0.4s ease-in-out
+            &:hover
+                background-color: rgba( 250, 239, 237, 0.6)
+            &:hover .picture__link-icon
+                top: 50%
+                opacity: 1
+            .picture__link-icon
+                @include flex-center
+                color: $white-bgc
+                transition: 0.3s ease-in-out
+                position: absolute
+                opacity: 0
+                top: 0
+                left: 50%
+                transform: translate(-50%, -50%)
+                font-size: 36px
+        &:nth-of-type(1)
+            @include pictureJpg (1)
+        &:nth-of-type(2)
+            @include pictureJpg (2)
+        &:nth-of-type(3)
+            @include pictureJpg (3)
+        &:nth-of-type(4)
+            @include picturePng (4)
+        &:nth-of-type(5)
+            @include picturePng (5)
+        &:nth-of-type(6)
+            @include pictureJpg (6)
