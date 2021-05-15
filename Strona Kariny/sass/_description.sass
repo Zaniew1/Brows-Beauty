@@ -122,15 +122,16 @@
                 .description__button
                     @include button-style
                     margin-bottom: 30px
+
                     @include mq (tablet)
                         width: 20vw
                     @include mq-land(tablet)
                         width: 20vw
                     @include mq-land (tablet-wide)
                         width: 10vw
-                        .description__button-link
-                            text-decoration: none
-                            color: $white-bgc
+                    .description__button-link
+                        text-decoration: none
+                        color: $white-bgc
                     &:hover
                         background-color: $gold-bgc
                         transition: all ease .3s

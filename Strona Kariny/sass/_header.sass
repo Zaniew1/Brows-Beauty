@@ -87,8 +87,10 @@
             height: 20vh
             min-height: 150px
         @include mq-land(tablet-wide)
+            
             height: 20vh
         @include mq-land(desktop)
+            position: relative
             background-color: #fff
             width: 95vw
             margin: 0 auto
@@ -107,12 +109,15 @@
             @include mq-land(tablet)
                 width: 30%
             @include mq-land(desktop)
-                width: 51.5%
-                align-items: flex-end
+                position: absolute
+                top: 50%
+                left: 45%
+                transform: translate(-50%, -50%)
             @include mq-land(desktop-wide)
-                width: 51.5%
+                width: 48.5%
             .nav__logo-wrapper
                 @include flex-center
+                position: absolute
                 flex-direction: column
                 .nav__icon
                     padding-top: 15px
@@ -185,6 +190,11 @@
                 display: flex
             @include mq-land(tablet)
                 display: flex
+            @include mq-land(desktop)
+                position: absolute
+                top: 50%
+                left: 75%
+                transform: translate(-50%, -50%)
             .nav__list
                 display: none
                 flex-direction: row

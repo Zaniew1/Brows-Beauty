@@ -15,7 +15,6 @@ body .wholeWrapper {
   width: 100vw;
   min-width: 320px;
   min-height: 530px;
-  max-width: 1680px;
 }
 
 .aside {
@@ -394,6 +393,7 @@ body .wholeWrapper {
 
 @media only screen and (orientation: landscape) and (min-width: 1248px) {
   .header .nav {
+    position: relative;
     background-color: #fff;
     width: 95vw;
     margin: 0 auto;
@@ -437,16 +437,17 @@ body .wholeWrapper {
 
 @media only screen and (orientation: landscape) and (min-width: 1248px) {
   .header .nav .nav__logo {
-    width: 51.5%;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 }
 
 @media only screen and (orientation: landscape) and (min-width: 1440px) {
   .header .nav .nav__logo {
-    width: 51.5%;
+    width: 48.5%;
   }
 }
 
@@ -460,6 +461,7 @@ body .wholeWrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: absolute;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -648,6 +650,16 @@ body .wholeWrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1248px) {
+  .header .nav .nav__wrapper {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 }
 
@@ -1468,10 +1480,11 @@ body .wholeWrapper {
   .description .description__wrapper .text__wrapper .description__wrapper-button-number .description__button {
     width: 10vw;
   }
-  .description .description__wrapper .text__wrapper .description__wrapper-button-number .description__button .description__button-link {
-    text-decoration: none;
-    color: #fff;
-  }
+}
+
+.description .description__wrapper .text__wrapper .description__wrapper-button-number .description__button .description__button-link {
+  text-decoration: none;
+  color: #fff;
 }
 
 .description .description__wrapper .text__wrapper .description__wrapper-button-number .description__button:hover {
@@ -1749,6 +1762,7 @@ body .wholeWrapper {
 
 .gallery .gallery__line {
   text-align: center;
+  width: 100%;
   height: 5%;
   font-family: "Playfair Display", serif;
   color: #c6ac85;
