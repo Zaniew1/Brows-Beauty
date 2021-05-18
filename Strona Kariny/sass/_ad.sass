@@ -1,6 +1,6 @@
 .ad
     position: relative
-    width: 90vw
+    width: 90%
     height: 40vh
     margin: 10vh auto
     background-image: url("../imgKarina/makeup.jpg")
@@ -18,7 +18,7 @@
     @include mq-land(desktop)
         height: 45vh
     @include mq-land(desktop-wide)
-        width: 40vw
+        width: 50vw
         height: 50vh
     .ad__new
         position: absolute
@@ -45,7 +45,7 @@
         @include mq-land(tablet-wide)
             font-size: 46px
         @include mq-land(desktop)
-            font-size: 36px
+            font-size: 56px
     .ad__price
         @include position-center
         color: $white-bgc
@@ -66,6 +66,8 @@
             font-size: 50px
         @include mq-land(tablet-wide)
             font-size: 60px
+        @include mq-land(desktop)
+            font-size: 80px
     .ad__line
         position: absolute
         transform: translate(-50%, -50%)
@@ -89,4 +91,4 @@
         @include mq-land(tablet-wide)
             font-size: 22px
         @include mq-land(desktop)
-            font-size: 18px
+            font-size: 24px

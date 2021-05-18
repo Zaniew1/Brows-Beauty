@@ -9,8 +9,6 @@
     min-width: 300px
     @include mq(phablet)
         height: 45vh
-        max-width: 680px
-
     @include mq(tablet)
         height: 35vh
         border-bottom: 15px solid $gold-bgc
@@ -31,7 +29,7 @@
         width: 95vw 
         height: 76vh
     @include mq-land(desktop-wide)
-        height: 86vh
+        height: 85vh
     .banner__picture
         width: 55%
         height: 100%
@@ -116,9 +114,13 @@
                 display: block
             @include mq-land(tablet-wide)
                 display: block
-                .banner__button-link
-                    text-decoration: none
-                    color: $white-bgc
+                font-size: 16px
+            .banner__button-link
+                @include flex-center
+                width: 15vw
+                height: 45px
+                text-decoration: none
+                color: $white-bgc
             &:hover
                 background-color: $button-bgc
                 color: $white-bgc
