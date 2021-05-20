@@ -1,14 +1,14 @@
 const burger = document.querySelector('.nav__bar')
 const aside = document.querySelector('.aside')
 
-burger.addEventListener('click',() => {
+burger.addEventListener('click',() => {                                                 // burger menu
     aside.style.height = "100vh";
     aside.style.visibility = "visible";
     aside.style.opacity = "1";
 
 })
 
-const cross = document.querySelector('.aside__close')
+const cross = document.querySelector('.aside__close')                                   //rozwijane menu na telefonach
 cross.addEventListener('click', ()=> {
     aside.style.height = "0vh";
     aside.style.visibility = "hidden";
@@ -16,7 +16,7 @@ cross.addEventListener('click', ()=> {
 
 })
 
-const arrowUp = document.querySelector(".goStart")
+const arrowUp = document.querySelector(".goStart")                                      // przycisk powrotu na górę strony
 
 arrowUp.addEventListener('click', ()=>{
 const scrollTop = window.setInterval(function() {
@@ -29,12 +29,12 @@ const scrollTop = window.setInterval(function() {
 }, 6); 
 })
 window.addEventListener("scroll", () =>{
-    if(window.innerWidth >= 768 && window.innerHeight >= 375){
+    if(window.innerWidth >= 768 && window.innerHeight >= 375){                          // kod rozwijający małe menu po scrollu użytkownika 
     const stickyNav = document.querySelector(".sticky");
     const header = document.querySelector(".nav");
     const logo = document.querySelector(".nav__logo");
     const nav = document.querySelector(".nav__wrapper");
-    if(window.pageYOffset >= 1 )
+    if(window.pageYOffset >= 1 )                                            // włącz po najmniejszym scrollu 
     {
         stickyNav.style.display = "flex";
         header.style.height = "20vh";
@@ -42,14 +42,14 @@ window.addEventListener("scroll", () =>{
         nav.style.display = "none";
         
     }
-    else if (window.pageYOffset < 1)
+    else if (window.pageYOffset < 1)                                    // wyłącz kiedy jest na górze
     {
-        if(window.innerWidth <= 1279)
+        if(window.innerWidth <= 1279)                                   
         {
             stickyNav.style.display = "none";
             header.style.height = "25vh";
             logo.style.display = "flex";
-            nav.style.display = "flex";
+            nav.style.display = "flex";                                 // zachowaj się inaczej na danej rozdzielczości
         }
         else if(window.innerWidth >= 1280)
         {
@@ -62,12 +62,12 @@ window.addEventListener("scroll", () =>{
 }
 })
 
-const background = document.querySelector(".gallery__background");
-const wrappers = [...document.querySelectorAll('.gallery__wrapper')];
-const enlarges = [...document.querySelectorAll('.gallery__enlarge-div')];
-const infos = [...document.querySelectorAll('.gallery__info')];
-const galleryX = [...document.querySelectorAll('.gallery__x')];
-const pinks = [...document.querySelectorAll('.gallery__pink')]
+const background = document.querySelector(".gallery__background");          //zaciemnianie tła po naciśnięciu powiększania zdjęcia w galerii
+const wrappers = [...document.querySelectorAll('.gallery__wrapper')];       //div w którym jest zdjęcie
+const enlarges = [...document.querySelectorAll('.gallery__enlarge-div')];   //div po naciśnięciu którego zdjęcie się powiększa
+const infos = [...document.querySelectorAll('.gallery__info')];             //dolna informacja na zdjęciu w galerii
+const galleryX = [...document.querySelectorAll('.gallery__x')];             //wyłącznik powiększenia zdjęcia
+const pinks = [...document.querySelectorAll('.gallery__pink')]              //zmienianie koloru tła zdjęcia na hoverze
 enlarges.forEach((enlarge, index) => {
 
     enlarge.addEventListener('click', ()=>  {
