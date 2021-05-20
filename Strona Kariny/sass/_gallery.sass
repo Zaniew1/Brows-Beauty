@@ -7,7 +7,7 @@
     z-index: 5
     width: 100%
     height: 100%
-    background-color: rgba(0,0,0,0.6)
+    background-color: rgba(0,0,0,0.8)
 .wholeGalleryWrapper
     .galleryPhotos
         @include flex-center-column
@@ -62,17 +62,17 @@
                 top: 50%
                 opacity: 1
             &:nth-of-type(1)
-                @include pictureJpg (1)
+                @include pictureJpg (instagram1)
             &:nth-of-type(2)
-                @include pictureJpg (2)
+                @include pictureJpg (instagram2)
             &:nth-of-type(3)
-                @include pictureJpg (3)
+                @include pictureJpg (instagram3)
             &:nth-of-type(4)
-                @include picturePng (4)
+                @include pictureJpeg (instagram4)
             &:nth-of-type(5)
-                @include picturePng (5)
+                @include pictureJpg(instagram5)
             &:nth-of-type(6)
-                @include pictureJpg (6)
+                @include pictureJpeg (instagram6)
             .gallery__enlarge-div
                 @include position-center
                 top: 0
@@ -82,29 +82,28 @@
                 background-color: $white-bgc
                 border-radius: 50%
                 transition: 0.3s ease-in-out
-                @include mq(tablet)
-                @include mq(tablet-wide)
-                @include mq-land(tablet)
-                @include mq-land(tablet-wide)
                 @include mq-land(desktop)
+                    width: 80px
+                    height: 80px
                 @include mq-land(desktop-wide)
+                    width: 90px
+                    height: 90px
                 &:hover 
                     background-color: $font-color
                 .gallery__enlarge
                     @include position-center
                     color: $gold-bgc
                     font-size: 24px
-                    @include mq(tablet)
-                    @include mq(tablet-wide)
-                    @include mq-land(tablet)
-                    @include mq-land(tablet-wide)
                     @include mq-land(desktop)
+                        font-size: 28px
                     @include mq-land(desktop-wide)
+                        font-size: 42px
             .gallery__info
                 @include flex-center
                 @include position-center
                 @include contact__line
                 font-weight: bold
+                font-size: 11px
                 text-transform: uppercase
                 background-color: $gold-bgc
                 width: 0
@@ -113,12 +112,14 @@
                 opacity: 0
                 color: $white-bgc
                 transition: 0.3s ease-in-out
-                @include mq(tablet)
-                @include mq(tablet-wide)
-                @include mq-land(tablet)
-                @include mq-land(tablet-wide)
+                @include mq (tablet)
+                    font-size: 13px
+                @include mq-land (tablet)
+                    font-size: 13px
                 @include mq-land(desktop)
+                    font-size: 16px
                 @include mq-land(desktop-wide)
+                    font-size: 22px
             .gallery__x
                 opacity: 0
                 position: absolute
@@ -128,19 +129,30 @@
                 font-size: 22px
                 color: $white-bgc
                 @include mq(tablet)
+                    font-size: 32px
                 @include mq(tablet-wide)
                 @include mq-land(tablet)
-                @include mq-land(tablet-wide)
+                    font-size: 32px 
                 @include mq-land(desktop)
-                @include mq-land(desktop-wide)
+                    font-size: 36px
+
         .active
             @include position-center
             position: fixed
             z-index: 10
             content: none
             @include mq(tablet)
+                width: 600px
+                height: 600px
             @include mq(tablet-wide)
+                width: 700px
+                height: 700px
             @include mq-land(tablet)
+                width: 500px
+                height: 500px
             @include mq-land(tablet-wide)
+                width: 600px
+                height: 600px
             @include mq-land(desktop)
-            @include mq-land(desktop-wide)
+                width: 700px
+                height: 700px

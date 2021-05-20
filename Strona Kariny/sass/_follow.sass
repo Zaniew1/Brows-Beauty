@@ -1,5 +1,6 @@
 .follow
     @include flex-center
+    position: relative
     flex-direction: column
     margin: 10vh auto
     width: 80vw
@@ -30,11 +31,13 @@
         color: #fff
     .follow__link
         @include flex-center
+        flex-direction: column
         width: 100%
         height: 100%
         text-decoration: none
         color: $font-color
-        
+        @include mq-land(tablet-wide)
+            flex-direction: row
         .follow__line
             font-size: $font-xsmall
             font-family: $family-rubik
@@ -56,6 +59,8 @@
             @include mq-land(phone)
                 font-size: 10px
                 line-height: 3
+            @include mq-land(desktop)
+                font-size: 14px
             .follow__icon
                 margin-right: 10px
                 @include mq(tablet-wide)

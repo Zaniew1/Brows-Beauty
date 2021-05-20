@@ -490,6 +490,7 @@ body .wholeWrapper {
   padding-top: 15px;
   color: #5e5f61;
   font-size: 1.5rem;
+  font-weight: lighter;
 }
 
 @media only screen and (orientation: portrait) and (min-width: 640px) {
@@ -803,15 +804,7 @@ body .wholeWrapper {
 }
 
 .banner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  position: relative;
   margin: 0 auto;
   width: 90vw;
   height: 30vh;
@@ -877,15 +870,13 @@ body .wholeWrapper {
 }
 
 .banner .banner__picture {
-  width: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
   height: 100%;
   z-index: 4;
-}
-
-@media only screen and (orientation: landscape) and (min-width: 1024px) {
-  .banner .banner__picture {
-    width: 60%;
-  }
+  opacity: .6;
 }
 
 @media only screen and (orientation: landscape) and (min-width: 1248px) {
@@ -896,7 +887,7 @@ body .wholeWrapper {
 
 @media only screen and (orientation: landscape) and (min-width: 1440px) {
   .banner .banner__picture {
-    width: 55%;
+    width: 45%;
   }
 }
 
@@ -906,6 +897,9 @@ body .wholeWrapper {
 }
 
 .banner .banner__invitation {
+  position: absolute;
+  top: 0;
+  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -932,7 +926,8 @@ body .wholeWrapper {
 .banner .banner__invitation .banner__header {
   color: #c6ac85;
   font-size: 1.5rem;
-  font-family: "over the rainbow", sans-serif;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: lighter;
 }
 
 @media only screen and (orientation: portrait) and (min-width: 530px) {
@@ -985,6 +980,7 @@ body .wholeWrapper {
 
 @media only screen and (orientation: landscape) and (min-width: 1440px) {
   .banner .banner__invitation .banner__header {
+    padding-bottom: 100px;
     font-size: 120px;
   }
 }
@@ -1330,9 +1326,9 @@ body .wholeWrapper {
 
 @media only screen and (orientation: landscape) and (min-width: 1248px) {
   .description .description__wrapper .text__wrapper .description__wrapper-line .description__text-line {
-    font-size: 17px;
+    font-size: 19px;
     line-height: 1.8;
-    padding: 50px 35px 50px 90px;
+    padding: 70px 35px 70px 90px;
   }
 }
 
@@ -1436,9 +1432,9 @@ body .wholeWrapper {
 
 @media only screen and (orientation: landscape) and (min-width: 1248px) {
   .description .description__wrapper .text__wrapper .description__wrapper-button-number .description__text-line--two-wrapper .description__text-line--two {
-    font-size: 17px;
+    font-size: 19px;
     line-height: 1.8;
-    padding: 50px 120px 10px 0;
+    padding: 70px 120px 10px 0;
   }
 }
 
@@ -1566,10 +1562,12 @@ body .wholeWrapper {
   width: 90%;
   height: 40vh;
   margin: 10vh auto;
-  background-image: url("../imgKarina/makeup.jpg");
   background-position: center;
   background-size: cover;
   text-align: center;
+  background-image: url("../imgKarina/ad.png");
+  background-position: center;
+  background-size: cover;
 }
 
 @media only screen and (orientation: portrait) and (min-width: 1024px) {
@@ -1613,8 +1611,8 @@ body .wholeWrapper {
   font-weight: bold;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  font-family: "over the rainbow", sans-serif;
-  color: #c6ac85;
+  font-family: "Cormorant Garamond", serif;
+  color: #fff;
   font-size: 1.5rem;
 }
 
@@ -1732,7 +1730,7 @@ body .wholeWrapper {
           transform: translate(-50%, -50%);
   top: 85%;
   left: 50%;
-  color: #c6ac85;
+  color: #fff;
   font-size: 1rem;
   font-weight: bold;
   width: 100%;
@@ -1771,13 +1769,13 @@ body .wholeWrapper {
 
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
   .ad .ad__line {
-    font-size: 22px;
+    font-size: 24px;
   }
 }
 
 @media only screen and (orientation: landscape) and (min-width: 1248px) {
   .ad .ad__line {
-    font-size: 24px;
+    font-size: 28px;
   }
 }
 
@@ -2086,6 +2084,13 @@ body .wholeWrapper {
   }
 }
 
+@media only screen and (orientation: landscape) and (min-width: 1248px) {
+  .gallery .gallery__button {
+    height: 60px;
+    font-size: 14px;
+  }
+}
+
 .gallery .gallery__button .gallery__button-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2157,8 +2162,14 @@ body .wholeWrapper {
 
 @media only screen and (orientation: landscape) and (min-width: 1440px) {
   .picture {
-    width: 80%;
-    height: 25vh;
+    width: 90%;
+    height: 250px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1920px) {
+  .picture {
+    height: 350px;
   }
 }
 
@@ -2186,7 +2197,7 @@ body .wholeWrapper {
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
   .picture .picture__wrapper {
     width: calc( 100%/6);
-    height: 100%;
+    height: calc(90vw/6);
   }
 }
 
@@ -2233,37 +2244,37 @@ body .wholeWrapper {
 }
 
 .picture .picture__wrapper:nth-of-type(1) {
-  background-image: url("../imgKarina/1.jpg");
+  background-image: url("../imgKarina/instagram1.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .picture .picture__wrapper:nth-of-type(2) {
-  background-image: url("../imgKarina/2.jpg");
+  background-image: url("../imgKarina/instagram2.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .picture .picture__wrapper:nth-of-type(3) {
-  background-image: url("../imgKarina/3.jpg");
+  background-image: url("../imgKarina/instagram3.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .picture .picture__wrapper:nth-of-type(4) {
-  background-image: url("../imgKarina/4.png");
+  background-image: url("../imgKarina/instagram4.JPEG");
   background-position: center;
   background-size: cover;
 }
 
 .picture .picture__wrapper:nth-of-type(5) {
-  background-image: url("../imgKarina/5.png");
+  background-image: url("../imgKarina/instagram5.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .picture .picture__wrapper:nth-of-type(6) {
-  background-image: url("../imgKarina/6.jpg");
+  background-image: url("../imgKarina/instagram6.JPEG");
   background-position: center;
   background-size: cover;
 }
@@ -2278,6 +2289,7 @@ body .wholeWrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -2348,10 +2360,23 @@ body .wholeWrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   height: 100%;
   text-decoration: none;
   color: #202031;
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1024px) {
+  .follow .follow__link {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .follow .follow__link .follow__line {
@@ -2390,6 +2415,12 @@ body .wholeWrapper {
   .follow .follow__link .follow__line {
     font-size: 10px;
     line-height: 3;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1248px) {
+  .follow .follow__link .follow__line {
+    font-size: 14px;
   }
 }
 
@@ -2557,12 +2588,6 @@ body .wholeWrapper {
   }
 }
 
-@media only screen and (orientation: landscape) and (min-width: 1440px) {
-  .footer .footer__contact .footer__list .footer__item .footer__link {
-    font-size: 12px;
-  }
-}
-
 .footer .footer__contact .footer__list .footer__item .footer__link:hover {
   color: #c6ac85;
   cursor: pointer;
@@ -2591,6 +2616,12 @@ body .wholeWrapper {
 @media only screen and (orientation: landscape) and (min-width: 768px) {
   .footer .footer__contact .footer__list .footer__item .footer__link .footer__icon {
     font-size: 20px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1248px) {
+  .footer .footer__contact .footer__list .footer__item .footer__link .footer__icon {
+    font-size: 26px;
   }
 }
 
@@ -2640,18 +2671,12 @@ body .wholeWrapper {
 
 @media only screen and (orientation: landscape) and (min-width: 768px) {
   .footer .footer__copyright .footer__socials .footer__socials-list .footer__socials-item .footer__socials-link .footer__socials-icon {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 
 .footer .footer__copyright .footer__socials .footer__socials-list .footer__socials-item .footer__socials-link .footer__socials-icon:hover {
-  color: #c13584;
-  -webkit-transition: ease-in-out .3s;
-  transition: ease-in-out .3s;
-}
-
-.footer .footer__copyright .footer__socials .footer__socials-list .footer__socials-item .footer__socials-link .footer__socials-icon--two:hover {
-  color: #3b5998;
+  color: #202031;
   -webkit-transition: ease-in-out .3s;
   transition: ease-in-out .3s;
 }
@@ -2692,7 +2717,7 @@ body .wholeWrapper {
 
 @media only screen and (orientation: landscape) and (min-width: 1440px) {
   .footer .footer__copyright .footer__signature .footer__author {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
@@ -3514,7 +3539,7 @@ body .wholeWrapper {
       -ms-flex-align: center;
           align-items: center;
   width: 80vw;
-  height: 15vh;
+  height: 5vh;
   margin: 0 auto;
   color: #202031;
   border-bottom: 1px solid #c6ac85;
@@ -3537,14 +3562,14 @@ body .wholeWrapper {
 @media only screen and (orientation: landscape) and (min-width: 768px) {
   .priceTag .price__header-wrapper {
     width: 60vw;
-    height: 20vh;
+    height: 5vh;
   }
 }
 
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
   .priceTag .price__header-wrapper {
     width: 70vw;
-    height: 10vh;
+    height: 0vh;
   }
 }
 
@@ -3672,13 +3697,16 @@ body .wholeWrapper {
 @media only screen and (orientation: portrait) and (min-width: 1024px) {
   .priceTag .price__div .price__price {
     padding-left: 60px;
-    font-size: 16px;
+    font-weight: bold;
+    font-size: 20px;
   }
 }
 
 @media only screen and (orientation: landscape) and (min-width: 1248px) {
   .priceTag .price__div .price__price {
     padding-right: 5vw;
+    font-weight: bold;
+    font-size: 24px;
   }
 }
 
@@ -3692,7 +3720,7 @@ body .wholeWrapper {
   z-index: 5;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .wholeGalleryWrapper .galleryPhotos {
@@ -3827,37 +3855,37 @@ body .wholeWrapper {
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(1) {
-  background-image: url("../imgKarina/1.jpg");
+  background-image: url("../imgKarina/instagram1.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(2) {
-  background-image: url("../imgKarina/2.jpg");
+  background-image: url("../imgKarina/instagram2.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(3) {
-  background-image: url("../imgKarina/3.jpg");
+  background-image: url("../imgKarina/instagram3.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(4) {
-  background-image: url("../imgKarina/4.png");
+  background-image: url("../imgKarina/instagram4.JPEG");
   background-position: center;
   background-size: cover;
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(5) {
-  background-image: url("../imgKarina/5.png");
+  background-image: url("../imgKarina/instagram5.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(6) {
-  background-image: url("../imgKarina/6.jpg");
+  background-image: url("../imgKarina/instagram6.JPEG");
   background-position: center;
   background-size: cover;
 }
@@ -3878,6 +3906,20 @@ body .wholeWrapper {
   transition: 0.3s ease-in-out;
 }
 
+@media only screen and (orientation: landscape) and (min-width: 1248px) {
+  .wholeGalleryWrapper .galleryPhotos .gallery__wrapper .gallery__enlarge-div {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1440px) {
+  .wholeGalleryWrapper .galleryPhotos .gallery__wrapper .gallery__enlarge-div {
+    width: 90px;
+    height: 90px;
+  }
+}
+
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper .gallery__enlarge-div:hover {
   background-color: #202031;
 }
@@ -3890,6 +3932,18 @@ body .wholeWrapper {
           transform: translate(-50%, -50%);
   color: #c6ac85;
   font-size: 24px;
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1248px) {
+  .wholeGalleryWrapper .galleryPhotos .gallery__wrapper .gallery__enlarge-div .gallery__enlarge {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1440px) {
+  .wholeGalleryWrapper .galleryPhotos .gallery__wrapper .gallery__enlarge-div .gallery__enlarge {
+    font-size: 42px;
+  }
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper .gallery__info {
@@ -3911,6 +3965,7 @@ body .wholeWrapper {
   font-family: "Rubik", sans-serif;
   color: #c6ac85;
   font-weight: bold;
+  font-size: 11px;
   text-transform: uppercase;
   background-color: #c6ac85;
   width: 0;
@@ -3920,6 +3975,30 @@ body .wholeWrapper {
   color: #fff;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+}
+
+@media only screen and (orientation: portrait) and (min-width: 768px) {
+  .wholeGalleryWrapper .galleryPhotos .gallery__wrapper .gallery__info {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 768px) {
+  .wholeGalleryWrapper .galleryPhotos .gallery__wrapper .gallery__info {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1248px) {
+  .wholeGalleryWrapper .galleryPhotos .gallery__wrapper .gallery__info {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1440px) {
+  .wholeGalleryWrapper .galleryPhotos .gallery__wrapper .gallery__info {
+    font-size: 22px;
+  }
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper .gallery__x {
@@ -3932,6 +4011,24 @@ body .wholeWrapper {
   color: #fff;
 }
 
+@media only screen and (orientation: portrait) and (min-width: 768px) {
+  .wholeGalleryWrapper .galleryPhotos .gallery__wrapper .gallery__x {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 768px) {
+  .wholeGalleryWrapper .galleryPhotos .gallery__wrapper .gallery__x {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1248px) {
+  .wholeGalleryWrapper .galleryPhotos .gallery__wrapper .gallery__x {
+    font-size: 36px;
+  }
+}
+
 .wholeGalleryWrapper .galleryPhotos .active {
   position: absolute;
   top: 50%;
@@ -3941,5 +4038,40 @@ body .wholeWrapper {
   position: fixed;
   z-index: 10;
   content: none;
+}
+
+@media only screen and (orientation: portrait) and (min-width: 768px) {
+  .wholeGalleryWrapper .galleryPhotos .active {
+    width: 600px;
+    height: 600px;
+  }
+}
+
+@media only screen and (orientation: portrait) and (min-width: 1024px) {
+  .wholeGalleryWrapper .galleryPhotos .active {
+    width: 700px;
+    height: 700px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 768px) {
+  .wholeGalleryWrapper .galleryPhotos .active {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1024px) {
+  .wholeGalleryWrapper .galleryPhotos .active {
+    width: 600px;
+    height: 600px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1248px) {
+  .wholeGalleryWrapper .galleryPhotos .active {
+    width: 700px;
+    height: 700px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

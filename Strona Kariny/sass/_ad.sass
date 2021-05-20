@@ -3,10 +3,10 @@
     width: 90%
     height: 40vh
     margin: 10vh auto
-    background-image: url("../imgKarina/makeup.jpg")
     background-position: center
     background-size: cover
     text-align: center
+    @include picturePng (ad)
     @include mq(tablet-wide)
         width: 70vw
     @include mq-land(phone)
@@ -28,7 +28,7 @@
         font-weight: bold
         transform: translate(-50%, -50%)
         font-family: $family-over
-        color:  $gold-bgc
+        color:  $white-bgc
         font-size: $font-big
         @include mq(phone)
             font-size: 32px
@@ -73,7 +73,7 @@
         transform: translate(-50%, -50%)
         top: 85%
         left: 50%
-        color: $gold-bgc
+        color: $white-bgc
         font-size: $font-medium
         font-weight: bold
         width: 100%
@@ -89,6 +89,6 @@
         @include mq-land(tablet)
             font-size: 18px
         @include mq-land(tablet-wide)
-            font-size: 22px
-        @include mq-land(desktop)
             font-size: 24px
+        @include mq-land(desktop)
+            font-size: 28px
