@@ -1622,21 +1622,15 @@ body .wholeWrapper {
   }
 }
 
-@media only screen and (orientation: portrait) and (min-width: 640px) {
+@media only screen and (orientation: portrait) and (min-width: 768px) {
   .ad .ad__new {
     font-size: 38px;
   }
 }
 
-@media only screen and (orientation: portrait) and (min-width: 768px) {
-  .ad .ad__new {
-    font-size: 48px;
-  }
-}
-
 @media only screen and (orientation: portrait) and (min-width: 1024px) {
   .ad .ad__new {
-    font-size: 56px;
+    font-size: 42px;
   }
 }
 
@@ -1696,7 +1690,7 @@ body .wholeWrapper {
 
 @media only screen and (orientation: portrait) and (min-width: 1024px) {
   .ad .ad__price {
-    font-size: 76px;
+    font-size: 66px;
   }
 }
 
@@ -1743,15 +1737,9 @@ body .wholeWrapper {
   }
 }
 
-@media only screen and (orientation: portrait) and (min-width: 768px) {
-  .ad .ad__line {
-    font-size: 28px;
-  }
-}
-
 @media only screen and (orientation: portrait) and (min-width: 1024px) {
   .ad .ad__line {
-    font-size: 38px;
+    font-size: 26px;
   }
 }
 
@@ -3049,7 +3037,6 @@ body .wholeWrapper {
   width: 90%;
   margin: 0 5%;
   height: 70vh;
-  background-color: #fff;
 }
 
 @media only screen and (orientation: portrait) and (min-width: 768px) {
