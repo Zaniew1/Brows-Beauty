@@ -1,8 +1,7 @@
 .footer
     width: 100%
     .footer__contact
-        @include flex-center
-        flex-direction: column
+        @include flex(center, center, column)
         width: 100%
         height: 40vh
         background-color: $font-color
@@ -18,8 +17,7 @@
         @include mq-land(desktop-wide)
             height: 10vh
         .footer__list
-            display: flex
-            flex-direction: column
+            @include flex(center, none, column)
             list-style-type: none
             @include mq(tablet)
                 flex-direction: row
@@ -76,7 +74,7 @@
         .footer__socials
             padding: 5px 0 5px 0
             .footer__socials-list
-                @include flex-center
+                @include flex(center, center, row)
                 list-style: none
                 .footer__socials-item
                     padding: 10px 5px 0 5px

@@ -1,5 +1,5 @@
 .picture
-    @include flex-center
+    @include flex(center, center, row)
     flex-wrap: wrap
     flex-grow: 1
     height: 135vw
@@ -49,7 +49,7 @@
                 top: 50%
                 opacity: 1
             .picture__link-icon
-                @include flex-center
+                @include flex(center, center, row)
                 color: $white-bgc
                 transition: 0.3s ease-in-out
                 position: absolute

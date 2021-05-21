@@ -1,7 +1,7 @@
 .description
     width: 100%
     .description__wrapper
-        @include flex-center
+        @include flex(center, center, row)
         flex-wrap: wrap
         background-color: $white-bgc
         width: 300px
@@ -15,8 +15,7 @@
         @include mq-land (desktop)
             width: 850px
         .text__wrapper
-            @include flex-center
-            flex-direction: column
+            @include flex(center, center, column)
             width: 100%
             height: 100%
             @include mq (tablet)
@@ -26,8 +25,7 @@
                 flex-direction: row
                 align-items: start
             .description__wrapper-line
-                @include flex-center
-                flex-direction: column
+                @include flex(center, center, column)
                 width: 100%
                 height: 50%
                 @include mq (tablet)
@@ -58,8 +56,7 @@
                     .description__text-style
                         color: $gold-bgc
             .description__wrapper-button-number
-                @include flex-center
-                flex-direction: column
+                @include flex(center, center, column)
                 width: 100%
                 height: 50%
                 @include mq (tablet)
@@ -75,9 +72,7 @@
                     width: 50%
                     height: 100%
                 .description__text-line--two-wrapper
-                    display: flex
-                    justify-content: center
-                    align-items: center
+                    @include flex(center, center, row)
                     .description__text-line--two
                         display: block
                         justify-content: center
@@ -101,7 +96,7 @@
                             line-height: 1.8
                             padding: 70px 120px 10px 0
                 .description__number
-                    @include flex-center
+                    @include flex(center, center, row)
                     width: 80%
                     color: $gold-bgc
                     font-size: $font-xmedium
@@ -138,7 +133,7 @@
                         font-size: 14px
                         height: 60px
                     .description__button-link
-                        @include flex-center
+                        @include flex(center, center, row)
                         width: 100%
                         height: 100%
                         text-decoration: none

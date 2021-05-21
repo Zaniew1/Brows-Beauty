@@ -1,5 +1,5 @@
 .priceTag
-    @include flex-center-column
+    @include flex(center, center, column)
     width: 100%
     background-color: $white-bgc
     margin: 5vh auto
@@ -20,7 +20,7 @@
         width: 80vw
         margin: 10vh auto
     .price__header-wrapper
-        @include flex-center
+        @include flex(center, center, row)
         width: 80vw
         height: 5vh
         margin: 0 auto
@@ -41,6 +41,7 @@
         .price__header
             font-family: $family-rubik
     .price__div
+        @include flex(space-between, center, row)
         display: flex
         justify-content: space-between
         align-items: center
@@ -48,7 +49,6 @@
         width: 80vw
         margin: 0 auto
         @include mq (tablet)
-            display: flex
             justify-content: space-around
             height: 15vh
             flex-grow: 1

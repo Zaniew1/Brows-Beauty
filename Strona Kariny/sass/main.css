@@ -197,13 +197,20 @@ body .wholeWrapper {
 }
 
 .header .sticky {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: none;
   position: fixed;
   width: 100%;
   height: 6vh;
@@ -370,6 +377,10 @@ body .wholeWrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   height: 35vh;
   width: 100%;
   min-width: 180px;
@@ -479,11 +490,11 @@ body .wholeWrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: absolute;
 }
 
 .header .nav .nav__logo .nav__logo-wrapper .nav__icon {
@@ -683,17 +694,20 @@ body .wholeWrapper {
 }
 
 .header .nav .nav__wrapper .nav__list {
-  display: none;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: none;
   list-style-type: none;
   padding-right: 35px;
   width: 50vw;
@@ -760,7 +774,7 @@ body .wholeWrapper {
 
 @media only screen and (orientation: landscape) and (min-width: 1440px) {
   .header .nav .nav__wrapper .nav__list .nav__item {
-    padding-left: 40px;
+    padding-left: 20px;
     font-size: 14px;
   }
 }
@@ -1081,6 +1095,10 @@ body .wholeWrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 15vw;
   height: 45px;
   text-decoration: none;
@@ -1102,6 +1120,10 @@ body .wholeWrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 100%;
   height: 20vh;
 }
@@ -1194,6 +1216,10 @@ body .wholeWrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background-color: #fff;
@@ -1396,6 +1422,10 @@ body .wholeWrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .description .description__wrapper .text__wrapper .description__wrapper-button-number .description__text-line--two-wrapper .description__text-line--two {
@@ -1448,6 +1478,10 @@ body .wholeWrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 80%;
   color: #c6ac85;
   font-size: 1.25rem;
@@ -1545,6 +1579,10 @@ body .wholeWrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 100%;
   height: 100%;
   text-decoration: none;
@@ -1777,6 +1815,10 @@ body .wholeWrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: 50vh;
@@ -2089,6 +2131,10 @@ body .wholeWrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 100%;
   height: 100%;
   text-decoration: none;
@@ -2111,6 +2157,10 @@ body .wholeWrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-flex: 1;
@@ -2219,6 +2269,10 @@ body .wholeWrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   color: #fff;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
@@ -2277,11 +2331,11 @@ body .wholeWrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
   margin: 10vh auto;
   width: 80vw;
   height: 20vh;
@@ -2313,7 +2367,7 @@ body .wholeWrapper {
 
 @media only screen and (orientation: landscape) and (min-width: 768px) {
   .follow {
-    width: 30vw;
+    width: 35vw;
     height: 10vh;
     min-height: 80px;
   }
@@ -2321,7 +2375,7 @@ body .wholeWrapper {
 
 @media only screen and (orientation: landscape) and (min-width: 1440px) {
   .follow {
-    width: 18vw;
+    width: 20vw;
   }
 }
 
@@ -2408,7 +2462,7 @@ body .wholeWrapper {
 
 @media only screen and (orientation: landscape) and (min-width: 1248px) {
   .follow .follow__link .follow__line {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
@@ -2480,6 +2534,12 @@ body .wholeWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -2633,6 +2693,10 @@ body .wholeWrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   list-style: none;
 }
 
@@ -2810,6 +2874,10 @@ body .wholeWrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .title .title__wrapper .title__link {
@@ -2850,35 +2918,6 @@ body .wholeWrapper {
   padding: 10px;
 }
 
-.contact {
-  width: 100%;
-}
-
-@media only screen and (orientation: landscape) and (min-width: 530px) {
-  .contact {
-    height: 245vh;
-    margin-top: 10vh;
-  }
-}
-
-@media only screen and (orientation: landscape) and (min-width: 640px) {
-  .contact {
-    height: 255vh;
-  }
-}
-
-@media only screen and (orientation: landscape) and (min-width: 768px) {
-  .contact {
-    height: 185vh;
-  }
-}
-
-@media only screen and (orientation: landscape) and (min-width: 1440px) {
-  .contact {
-    height: 160vh;
-  }
-}
-
 .contact .contact__invite {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2893,35 +2932,28 @@ body .wholeWrapper {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 40vh;
+  height: 30vh;
   background-color: transparent;
   width: 100%;
 }
 
 @media only screen and (orientation: portrait) and (min-width: 768px) {
   .contact .contact__invite {
-    height: 25vh;
+    height: 20vh;
   }
 }
 
 @media only screen and (orientation: landscape) and (min-width: 530px) {
   .contact .contact__invite {
-    height: 50vh;
-    margin-top: 5vh;
+    height: 20vh;
+    margin: 30px auto;
   }
 }
 
 @media only screen and (orientation: landscape) and (min-width: 768px) {
   .contact .contact__invite {
-    margin-bottom: 30vh;
-    height: 25vh;
-  }
-}
-
-@media only screen and (orientation: landscape) and (min-width: 1440px) {
-  .contact .contact__invite {
-    height: 20vh;
-    margin-bottom: 20vh;
+    height: 10vh;
+    margin: 40px auto;
   }
 }
 
@@ -3013,84 +3045,7 @@ body .wholeWrapper {
   }
 }
 
-.contact .contact__wrapper {
-  position: relative;
-  width: 100%;
-  height: 150vh;
-}
-
-@media only screen and (orientation: portrait) and (min-width: 768px) {
-  .contact .contact__wrapper {
-    margin-top: 10vh;
-    height: 70vh;
-  }
-}
-
-@media only screen and (orientation: landscape) and (min-width: 768px) {
-  .contact .contact__wrapper {
-    margin-top: 10vh;
-    height: 70vh;
-  }
-}
-
-.contact .contact__wrapper .contact__map {
-  width: 90%;
-  margin: 0 5%;
-  height: 70vh;
-}
-
-@media only screen and (orientation: portrait) and (min-width: 768px) {
-  .contact .contact__wrapper .contact__map {
-    position: absolute;
-    top: 15%;
-    left: 35%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    width: 60%;
-    margin: 0 30% 0 10%;
-    height: 50vh;
-    z-index: 2;
-  }
-}
-
-@media only screen and (orientation: landscape) and (min-width: 530px) {
-  .contact .contact__wrapper .contact__map {
-    margin: 5vh 10vw 0 10vw;
-    height: 80vh;
-    width: 80vw;
-  }
-}
-
-@media only screen and (orientation: landscape) and (min-width: 640px) {
-  .contact .contact__wrapper .contact__map {
-    margin: 5vh 5vw 0 5vw;
-    height: 90vh;
-    width: 90vw;
-  }
-}
-
-@media only screen and (orientation: landscape) and (min-width: 768px) {
-  .contact .contact__wrapper .contact__map {
-    position: absolute;
-    top: 15%;
-    left: 35%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    width: 50%;
-    margin: 0 30% 0 10%;
-    height: 70vh;
-    z-index: 2;
-  }
-}
-
-@media only screen and (orientation: landscape) and (min-width: 1440px) {
-  .contact .contact__wrapper .contact__map {
-    width: 60%;
-    height: 50vh;
-  }
-}
-
-.contact .contact__wrapper .contact__contact {
+.contact .contact__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3104,180 +3059,197 @@ body .wholeWrapper {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  background-color: #fff;
-  width: 90%;
-  margin: 0 5%;
-  height: 80vh;
 }
 
 @media only screen and (orientation: portrait) and (min-width: 768px) {
-  .contact .contact__wrapper .contact__contact {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+  .contact .contact__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    width: 70%;
-    height: 60vh;
-    padding-top: 350px;
-  }
-}
-
-@media only screen and (orientation: portrait) and (min-width: 1024px) {
-  .contact .contact__wrapper .contact__contact {
-    padding-top: 400px;
-  }
-}
-
-@media only screen and (orientation: landscape) and (min-width: 530px) {
-  .contact .contact__wrapper .contact__contact {
-    margin-bottom: 15vh;
   }
 }
 
 @media only screen and (orientation: landscape) and (min-width: 768px) {
-  .contact .contact__wrapper .contact__contact {
+  .contact .contact__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    width: 50%;
-    height: 90vh;
-    padding-top: 260px;
+  }
+}
+
+.contact .contact__container .contact__information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+  height: 450px;
+  background-color: #fff;
+}
+
+@media only screen and (orientation: portrait) and (min-width: 640px) {
+  .contact .contact__container .contact__information {
+    width: 500px;
+  }
+}
+
+@media only screen and (orientation: portrait) and (min-width: 768px) {
+  .contact .contact__container .contact__information {
+    width: 350px;
+    margin: 0 0 0 auto;
+  }
+}
+
+@media only screen and (orientation: portrait) and (min-width: 1024px) {
+  .contact .contact__container .contact__information {
+    height: 500px;
+    width: 450px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 530px) {
+  .contact .contact__container .contact__information {
+    width: 70vw;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 768px) {
+  .contact .contact__container .contact__information {
+    width: 350px;
+    margin: 0 0 0 auto;
   }
 }
 
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
-  .contact .contact__wrapper .contact__contact {
-    height: 70vh;
-    padding-top: 380px;
+  .contact .contact__container .contact__information {
+    width: 450px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1248px) {
+  .contact .contact__container .contact__information {
+    width: 550px;
+    height: 650px;
   }
 }
 
 @media only screen and (orientation: landscape) and (min-width: 1440px) {
-  .contact .contact__wrapper .contact__contact {
-    height: 50vh;
-    padding-bottom: 160px;
+  .contact .contact__container .contact__information {
+    width: 750px;
+    height: 800px;
   }
 }
 
-.contact .contact__wrapper .contact__contact .contact__adress {
+.contact .contact__container .contact__information .contact__info-container {
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 40px;
-  text-align: center;
 }
 
-@media only screen and (orientation: portrait) and (min-width: 1024px) {
-  .contact .contact__wrapper .contact__contact .contact__adress {
-    margin-top: 50px;
+.contact .contact__container .contact__information .contact__info-container .contact__info-wrap {
+  margin: 30px 0 0 20px;
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1248px) {
+  .contact .contact__container .contact__information .contact__info-container .contact__info-wrap {
+    margin: 60px 0 0 10px;
   }
 }
 
-.contact .contact__wrapper .contact__contact .contact__adress .contact__h2 {
+.contact .contact__container .contact__information .contact__info-container .contact__info-wrap .contact__info-header {
   font-size: 15px;
   color: #202031;
   font-family: "Playfair Display", serif;
   font-weight: 400;
   padding-bottom: 20px;
+  font-size: 20px;
 }
 
-@media only screen and (orientation: portrait) and (min-width: 640px) {
-  .contact .contact__wrapper .contact__contact .contact__adress .contact__h2 {
-    font-size: 19px;
-    padding-bottom: 20px;
+@media only screen and (orientation: landscape) and (min-width: 1248px) {
+  .contact .contact__container .contact__information .contact__info-container .contact__info-wrap .contact__info-header {
+    font-size: 24px;
   }
 }
 
-@media only screen and (orientation: portrait) and (min-width: 1024px) {
-  .contact .contact__wrapper .contact__contact .contact__adress .contact__h2 {
-    font-size: 26px;
+@media only screen and (orientation: landscape) and (min-width: 1440px) {
+  .contact .contact__container .contact__information .contact__info-container .contact__info-wrap .contact__info-header {
+    font-size: 36px;
   }
 }
 
-@media only screen and (orientation: landscape) and (min-width: 530px) {
-  .contact .contact__wrapper .contact__contact .contact__adress .contact__h2 {
-    padding-bottom: 5px;
-    font-size: 14px;
-  }
-}
-
-@media only screen and (orientation: landscape) and (min-width: 640px) {
-  .contact .contact__wrapper .contact__contact .contact__adress .contact__h2 {
-    padding-bottom: 10px;
-    font-size: 16px;
-  }
-}
-
-.contact .contact__wrapper .contact__contact .contact__adress .contact__line {
-  font-size: 13px;
+.contact .contact__container .contact__information .contact__info-container .contact__info {
   font-family: "Rubik", sans-serif;
   color: #c6ac85;
+  font-size: 14px;
+  padding: 30px 0 30px 40px;
 }
 
-@media only screen and (orientation: portrait) and (min-width: 640px) {
-  .contact .contact__wrapper .contact__contact .contact__adress .contact__line {
-    font-size: 16px;
+@media only screen and (orientation: landscape) and (min-width: 1248px) {
+  .contact .contact__container .contact__information .contact__info-container .contact__info {
+    font-size: 18px;
+    padding: 40px 0 40px 50px;
   }
 }
 
-@media only screen and (orientation: portrait) and (min-width: 1024px) {
-  .contact .contact__wrapper .contact__contact .contact__adress .contact__line {
-    font-size: 22px;
+@media only screen and (orientation: landscape) and (min-width: 1440px) {
+  .contact .contact__container .contact__information .contact__info-container .contact__info {
+    font-size: 24px;
   }
 }
 
-@media only screen and (orientation: landscape) and (min-width: 530px) {
-  .contact .contact__wrapper .contact__contact .contact__adress .contact__line {
-    padding-bottom: 15px;
-    font-size: 12px;
-  }
+.contact .contact__container .contact__information .contact__info-container .contact__info .contact__info-bold {
+  font-weight: bold;
+  padding: 0 15px 0 5px;
 }
 
-@media only screen and (orientation: landscape) and (min-width: 640px) {
-  .contact .contact__wrapper .contact__contact .contact__adress .contact__line {
-    padding-bottom: 20px;
-    font-size: 14px;
-  }
-}
-
-.contact .contact__wrapper .contact__contact .contact__phone {
+.contact .contact__container .contact__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -3285,175 +3257,229 @@ body .wholeWrapper {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-@media only screen and (orientation: landscape) and (min-width: 768px) {
-  .contact .contact__wrapper .contact__contact .contact__phone {
-    padding-top: 5px;
-  }
-}
-
-.contact .contact__wrapper .contact__contact .contact__phone .contact__h2 {
-  font-size: 15px;
-  color: #202031;
-  font-family: "Playfair Display", serif;
-  font-weight: 400;
-  padding-bottom: 20px;
+  margin: 5vh auto;
+  width: 300px;
+  background-color: #c6ac85;
 }
 
 @media only screen and (orientation: portrait) and (min-width: 640px) {
-  .contact .contact__wrapper .contact__contact .contact__phone .contact__h2 {
-    font-size: 19px;
-    padding-bottom: 20px;
+  .contact .contact__container .contact__wrap {
+    width: 500px;
   }
-}
-
-@media only screen and (orientation: portrait) and (min-width: 1024px) {
-  .contact .contact__wrapper .contact__contact .contact__phone .contact__h2 {
-    font-size: 26px;
-  }
-}
-
-@media only screen and (orientation: landscape) and (min-width: 530px) {
-  .contact .contact__wrapper .contact__contact .contact__phone .contact__h2 {
-    padding-bottom: 5px;
-    font-size: 14px;
-  }
-}
-
-@media only screen and (orientation: landscape) and (min-width: 640px) {
-  .contact .contact__wrapper .contact__contact .contact__phone .contact__h2 {
-    padding-bottom: 10px;
-    font-size: 16px;
-  }
-}
-
-.contact .contact__wrapper .contact__contact .contact__phone .contact__line {
-  font-size: 13px;
-  font-family: "Rubik", sans-serif;
-  color: #c6ac85;
-}
-
-@media only screen and (orientation: portrait) and (min-width: 640px) {
-  .contact .contact__wrapper .contact__contact .contact__phone .contact__line {
-    font-size: 16px;
-  }
-}
-
-@media only screen and (orientation: portrait) and (min-width: 1024px) {
-  .contact .contact__wrapper .contact__contact .contact__phone .contact__line {
-    font-size: 22px;
-  }
-}
-
-@media only screen and (orientation: landscape) and (min-width: 530px) {
-  .contact .contact__wrapper .contact__contact .contact__phone .contact__line {
-    padding-bottom: 15px;
-    font-size: 12px;
-  }
-}
-
-@media only screen and (orientation: landscape) and (min-width: 640px) {
-  .contact .contact__wrapper .contact__contact .contact__phone .contact__line {
-    padding-bottom: 20px;
-    font-size: 14px;
-  }
-}
-
-.contact .contact__wrapper .contact__contact .contact__email {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-bottom: 50px;
 }
 
 @media only screen and (orientation: portrait) and (min-width: 768px) {
-  .contact .contact__wrapper .contact__contact .contact__email {
-    margin-bottom: 0;
+  .contact .contact__container .contact__wrap {
+    width: 350px;
+    margin: 5vh auto 5vh 0;
+  }
+}
+
+@media only screen and (orientation: portrait) and (min-width: 1024px) {
+  .contact .contact__container .contact__wrap {
+    width: 450px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 530px) {
+  .contact .contact__container .contact__wrap {
+    width: 70vw;
   }
 }
 
 @media only screen and (orientation: landscape) and (min-width: 768px) {
-  .contact .contact__wrapper .contact__contact .contact__email {
-    padding-top: 55px;
+  .contact .contact__container .contact__wrap {
+    width: 350px;
+    margin: 5vh auto 5vh 0;
   }
 }
 
-.contact .contact__wrapper .contact__contact .contact__email .contact__h2 {
+@media only screen and (orientation: landscape) and (min-width: 1024px) {
+  .contact .contact__container .contact__wrap {
+    width: 450px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1248px) {
+  .contact .contact__container .contact__wrap {
+    width: 600px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1440px) {
+  .contact .contact__container .contact__wrap {
+    width: 850px;
+    height: 900px;
+  }
+}
+
+.contact .contact__container .contact__wrap .contact__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.contact .contact__container .contact__wrap .contact__label .contact__label-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   font-size: 15px;
   color: #202031;
   font-family: "Playfair Display", serif;
   font-weight: 400;
   padding-bottom: 20px;
+  font-size: 20px;
+  margin: 30px auto;
 }
 
-@media only screen and (orientation: portrait) and (min-width: 640px) {
-  .contact .contact__wrapper .contact__contact .contact__email .contact__h2 {
-    font-size: 19px;
-    padding-bottom: 20px;
+@media only screen and (orientation: landscape) and (min-width: 1248px) {
+  .contact .contact__container .contact__wrap .contact__label .contact__label-header {
+    font-size: 30px;
   }
 }
 
-@media only screen and (orientation: portrait) and (min-width: 1024px) {
-  .contact .contact__wrapper .contact__contact .contact__email .contact__h2 {
-    font-size: 26px;
+@media only screen and (orientation: landscape) and (min-width: 1440px) {
+  .contact .contact__container .contact__wrap .contact__label .contact__label-header {
+    font-size: 40px;
   }
 }
 
-@media only screen and (orientation: landscape) and (min-width: 530px) {
-  .contact .contact__wrapper .contact__contact .contact__email .contact__h2 {
-    padding-bottom: 5px;
-    font-size: 14px;
-  }
-}
-
-@media only screen and (orientation: landscape) and (min-width: 640px) {
-  .contact .contact__wrapper .contact__contact .contact__email .contact__h2 {
-    padding-bottom: 10px;
-    font-size: 16px;
-  }
-}
-
-.contact .contact__wrapper .contact__contact .contact__email .contact__line {
-  font-size: 13px;
-  font-family: "Rubik", sans-serif;
+.contact .contact__container .contact__wrap .contact__label .contact__input {
+  margin: 10px 5%;
+  width: 90%;
+  height: 40px;
+  border: 1px solid #c6ac85;
+  outline: none;
+  padding: 0 10px;
   color: #c6ac85;
+  font-family: "Rubik", sans-serif;
 }
 
-@media only screen and (orientation: portrait) and (min-width: 640px) {
-  .contact .contact__wrapper .contact__contact .contact__email .contact__line {
+@media only screen and (orientation: landscape) and (min-width: 1248px) {
+  .contact .contact__container .contact__wrap .contact__label .contact__input {
+    font-size: 18px;
+    width: 70%;
+    height: 60px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1440px) {
+  .contact .contact__container .contact__wrap .contact__label .contact__input {
+    font-size: 24px;
+  }
+}
+
+.contact .contact__container .contact__wrap .contact__label .contact__input:focus {
+  background-color: #fff;
+}
+
+.contact .contact__container .contact__wrap .contact__label .contact__text {
+  font-family: "Rubik", sans-serif;
+  margin: 10px 5%;
+  width: 90%;
+  height: 200px;
+  border: 1px solid #c6ac85;
+  outline: none;
+  padding: 10px 10px;
+  color: #c6ac85;
+  resize: vertical;
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1248px) {
+  .contact .contact__container .contact__wrap .contact__label .contact__text {
+    font-size: 18px;
+    width: 70%;
+    height: 300px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1440px) {
+  .contact .contact__container .contact__wrap .contact__label .contact__text {
+    font-size: 24px;
+  }
+}
+
+.contact .contact__container .contact__wrap .contact__label .contact__button {
+  width: 35vw;
+  height: 40px;
+  background-color: #454550;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  margin: 30px auto;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1248px) {
+  .contact .contact__container .contact__wrap .contact__label .contact__button {
     font-size: 16px;
+    height: 60px;
   }
 }
 
-@media only screen and (orientation: portrait) and (min-width: 1024px) {
-  .contact .contact__wrapper .contact__contact .contact__email .contact__line {
-    font-size: 22px;
-  }
+.contact .contact__container .contact__wrap .contact__label .contact__button .button__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-@media only screen and (orientation: landscape) and (min-width: 530px) {
-  .contact .contact__wrapper .contact__contact .contact__email .contact__line {
-    padding-bottom: 15px;
-    font-size: 12px;
-  }
+.contact .contact__container .contact__wrap .contact__label .contact__button:hover {
+  background-color: #fff;
 }
 
-@media only screen and (orientation: landscape) and (min-width: 640px) {
-  .contact .contact__wrapper .contact__contact .contact__email .contact__line {
-    padding-bottom: 20px;
-    font-size: 14px;
-  }
+.contact .contact__container .contact__wrap .contact__label .contact__button:hover .button__text {
+  color: #c6ac85;
 }
 
 .priceTag {
@@ -3525,6 +3551,10 @@ body .wholeWrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 80vw;
   height: 5vh;
   margin: 0 auto;
@@ -3574,6 +3604,13 @@ body .wholeWrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 12vh;
   width: 80vw;
   margin: 0 auto;
@@ -3581,9 +3618,6 @@ body .wholeWrapper {
 
 @media only screen and (orientation: portrait) and (min-width: 768px) {
   .priceTag .price__div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     height: 15vh;
@@ -3773,6 +3807,10 @@ body .wholeWrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   position: relative;
   width: 90vw;
   height: 90vw;
@@ -3943,6 +3981,10 @@ body .wholeWrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   position: absolute;
   top: 50%;
   left: 50%;

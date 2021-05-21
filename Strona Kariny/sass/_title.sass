@@ -1,6 +1,5 @@
 .title
-    @include flex-center
-    flex-direction: column
+    @include flex(center, center, column)
     width: 100%
     height: 25vh
     background-color: $white-bgc
@@ -14,7 +13,7 @@
         @include mq-land(desktop)
             font-size: 28px
     .title__wrapper
-        @include flex-center
+        @include flex(center, center, row)
         .title__link
             text-decoration: none
             .title__line

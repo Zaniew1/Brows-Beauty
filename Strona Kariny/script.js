@@ -30,14 +30,13 @@ const scrollTop = window.setInterval(function() {
 })
 window.addEventListener("scroll", () =>{
 
-    if(window.innerWidth >= 768 && window.innerHeight >= 375)
+    if(window.innerWidth >= 768 && window.innerHeight >= 500)
     {                                                                                   // kod rozwijający małe menu po scrollu użytkownika 
     const stickyNav = document.querySelector(".sticky");
     const header = document.querySelector(".nav");
     const logo = document.querySelector(".nav__logo");
     const nav = document.querySelector(".nav__wrapper");
-
-    if(window.pageYOffset >= 1 && window.innerWidth > 768)                                            // włącz po najmniejszym scrollu 
+    if(window.pageYOffset >= 1 )                                            // włącz po najmniejszym scrollu 
     {
         stickyNav.style.display = "flex";
         header.style.height = "20vh";
@@ -45,6 +44,7 @@ window.addEventListener("scroll", () =>{
         nav.style.display = "none";
         
     }
+
     else                                                                           // wyłącz kiedy jest na górze
     {
         if(window.innerWidth <= 1279)                                   

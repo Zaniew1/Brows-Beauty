@@ -1,8 +1,7 @@
 .header
     .sticky
+        @include flex(space-between, center, row)
         display: none
-        justify-content: space-between
-        align-items: center
         position: fixed
         width: 100%
         height: 6vh
@@ -14,8 +13,7 @@
             height: 7vh
             min-height: 50px
         .sticky__logo
-            @include flex-center
-            flex-direction: column
+            @include flex(center, center, column)
             height: 100%
             width: 20%
             margin-left: 2vw
@@ -76,9 +74,7 @@
                         @include mq(tablet-wide)
                             font-size: 22px
     .nav
-        display: flex
-        justify-content: space-between
-        align-items: center
+        @include flex (space-between, center, row)
         height: 35vh
         width: 100%
         min-width: 180px
@@ -101,8 +97,7 @@
             margin: 0 auto
             height: 15vh
         .nav__logo
-            @include flex-center
-            flex-direction: column
+            @include flex(center, center, column) 
             background-color: transparent
             height: 70%
             width: 50%
@@ -121,9 +116,8 @@
             @include mq-land(desktop-wide)
                 width: 48.5%
             .nav__logo-wrapper
-                @include flex-center
+                @include flex(center, center, column)
                 position: absolute
-                flex-direction: column
                 .nav__icon
                     padding-top: 15px
                     color: $gray-bgc
@@ -202,10 +196,8 @@
                 left: 75%
                 transform: translate(-50%, -50%)
             .nav__list
+                @include flex(space-between, center, row)
                 display: none
-                flex-direction: row
-                justify-content: space-between
-                align-items: center
                 list-style-type: none
                 padding-right: 35px
                 width: 50vw
@@ -234,7 +226,7 @@
                         padding-left: 30px
                         font-size: 10px
                     @include mq-land(desktop-wide)
-                        padding-left: 40px
+                        padding-left: 20px
                         font-size: 14px
                     .nav__link
                         color: $font-color

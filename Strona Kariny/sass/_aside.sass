@@ -1,8 +1,5 @@
 .aside 
-    display: flex
-    justify-content: space-around
-    align-items: center
-    flex-direction: column
+    @include flex(space-around, center, column)
     transition: ease 0.4s
     opacity: 0
     visibility: hidden
@@ -15,8 +12,7 @@
     @include mq-land(phone)
         justify-content: center
     .aside__logo
-        @include flex-center
-        flex-direction: column
+        @include flex(center, center, column)
         margin-top: 60px
         @include mq-land(phone)
             margin-top: 10px
