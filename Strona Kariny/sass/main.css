@@ -3313,7 +3313,7 @@ body .wholeWrapper {
   }
 }
 
-.contact .contact__container .contact__wrap .contact__label {
+.contact .contact__container .contact__wrap .contact__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3331,7 +3331,7 @@ body .wholeWrapper {
   height: 100%;
 }
 
-.contact .contact__container .contact__wrap .contact__label .contact__label-header {
+.contact .contact__container .contact__wrap .contact__form .contact__form-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3355,18 +3355,18 @@ body .wholeWrapper {
 }
 
 @media only screen and (orientation: landscape) and (min-width: 1248px) {
-  .contact .contact__container .contact__wrap .contact__label .contact__label-header {
+  .contact .contact__container .contact__wrap .contact__form .contact__form-header {
     font-size: 30px;
   }
 }
 
 @media only screen and (orientation: landscape) and (min-width: 1440px) {
-  .contact .contact__container .contact__wrap .contact__label .contact__label-header {
+  .contact .contact__container .contact__wrap .contact__form .contact__form-header {
     font-size: 40px;
   }
 }
 
-.contact .contact__container .contact__wrap .contact__label .contact__input {
+.contact .contact__container .contact__wrap .contact__form .contact__input {
   margin: 10px 5%;
   width: 90%;
   height: 40px;
@@ -3378,7 +3378,7 @@ body .wholeWrapper {
 }
 
 @media only screen and (orientation: landscape) and (min-width: 1248px) {
-  .contact .contact__container .contact__wrap .contact__label .contact__input {
+  .contact .contact__container .contact__wrap .contact__form .contact__input {
     font-size: 18px;
     width: 70%;
     height: 60px;
@@ -3386,16 +3386,16 @@ body .wholeWrapper {
 }
 
 @media only screen and (orientation: landscape) and (min-width: 1440px) {
-  .contact .contact__container .contact__wrap .contact__label .contact__input {
+  .contact .contact__container .contact__wrap .contact__form .contact__input {
     font-size: 24px;
   }
 }
 
-.contact .contact__container .contact__wrap .contact__label .contact__input:focus {
+.contact .contact__container .contact__wrap .contact__form .contact__input:focus {
   background-color: #fff;
 }
 
-.contact .contact__container .contact__wrap .contact__label .contact__text {
+.contact .contact__container .contact__wrap .contact__form .contact__text {
   font-family: "Rubik", sans-serif;
   margin: 10px 5%;
   width: 90%;
@@ -3408,7 +3408,7 @@ body .wholeWrapper {
 }
 
 @media only screen and (orientation: landscape) and (min-width: 1248px) {
-  .contact .contact__container .contact__wrap .contact__label .contact__text {
+  .contact .contact__container .contact__wrap .contact__form .contact__text {
     font-size: 18px;
     width: 70%;
     height: 300px;
@@ -3416,12 +3416,12 @@ body .wholeWrapper {
 }
 
 @media only screen and (orientation: landscape) and (min-width: 1440px) {
-  .contact .contact__container .contact__wrap .contact__label .contact__text {
+  .contact .contact__container .contact__wrap .contact__form .contact__text {
     font-size: 24px;
   }
 }
 
-.contact .contact__container .contact__wrap .contact__label .contact__button {
+.contact .contact__container .contact__wrap .contact__form .contact__submit {
   width: 35vw;
   height: 40px;
   background-color: #454550;
@@ -3452,33 +3452,14 @@ body .wholeWrapper {
 }
 
 @media only screen and (orientation: landscape) and (min-width: 1248px) {
-  .contact .contact__container .contact__wrap .contact__label .contact__button {
+  .contact .contact__container .contact__wrap .contact__form .contact__submit {
     font-size: 16px;
     height: 60px;
   }
 }
 
-.contact .contact__container .contact__wrap .contact__label .contact__button .button__text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.contact .contact__container .contact__wrap .contact__label .contact__button:hover {
+.contact .contact__container .contact__wrap .contact__form .contact__submit:hover {
   background-color: #fff;
-}
-
-.contact .contact__container .contact__wrap .contact__label .contact__button:hover .button__text {
   color: #c6ac85;
 }
 

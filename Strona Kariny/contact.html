@@ -137,15 +137,13 @@
                 </div>
             
                 <div class="contact__wrap">
-                    <label class="contact__label">
-                        <h1 class="contact__label-header">Napisz do mnie</h1>
-                        <input class="contact__input" type="text" placeholder="Imię" onfocus="this.placeholder=''" onblur="this.placeholder='Imię' ">
-                        <input class="contact__input" type="email" placeholder="Mail" onfocus="this.placeholder=''" onblur="this.placeholder='Mail'">
-                        <textarea class="contact__text" type="message"  placeholder="Wiadomość" onfocus="this.placeholder=''" onblur="this.placeholder='Wiadomość'"></textarea>
-                        <button class="contact__button"><span class="button__text">Wyślij wiadomość</span></button>
-                    
-
-                    </label>
+                    <form class="contact__form" method="POST">
+                        <h1 class="contact__form-header">Napisz do mnie</h1>
+                        <input class="contact__input" id="name" type="text" placeholder="Imię" onfocus="this.placeholder=''" onblur="this.placeholder='Imię' ">
+                        <input class="contact__input" id="email" type="email" placeholder="Mail" onfocus="this.placeholder=''" onblur="this.placeholder='Mail'">
+                        <textarea class="contact__text" id="message" type="message"  placeholder="Wiadomość" onfocus="this.placeholder=''" onblur="this.placeholder='Wiadomość'"></textarea>
+                        <input type="submit" value="Wyślij wiadomość" class="contact__submit">
+                    </form>
                 </div>
             </div>
     </section>
@@ -181,5 +179,6 @@
     </div>
 </div>
 <script src="script.js"> </script>
+<script src="contactForm.js"> </script>
 </body>
 </html>
