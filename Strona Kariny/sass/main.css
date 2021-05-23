@@ -95,7 +95,7 @@ body .wholeWrapper {
   margin: 0px;
   font-size: 1rem;
   color: #fff;
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik", "Poppins", sans-serif;
 }
 
 @media only screen and (orientation: portrait) and (min-width: 640px) {
@@ -108,7 +108,7 @@ body .wholeWrapper {
   color: #5e5f61;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik", "Poppins", sans-serif;
   color: #c6ac85;
   font-size: 0.625rem;
 }
@@ -134,7 +134,7 @@ body .wholeWrapper {
 }
 
 .aside .aside__menu .aside__list .aside__item {
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik", "Poppins", sans-serif;
   font-size: 1.5rem;
   padding-bottom: 5px;
   padding: 5px 0 0 15px;
@@ -269,7 +269,7 @@ body .wholeWrapper {
   font-weight: bold;
   font-size: 16px;
   color: #5e5f61;
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik", "Poppins", sans-serif;
 }
 
 @media only screen and (orientation: portrait) and (min-width: 1024px) {
@@ -294,7 +294,7 @@ body .wholeWrapper {
   color: #5e5f61;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik", "Poppins", sans-serif;
   font-size: 0.625rem;
 }
 
@@ -327,7 +327,7 @@ body .wholeWrapper {
 .header .sticky .sticky__nav .sticky__list .sticky__item {
   padding: 0 20px;
   font-size: 0.75rem;
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik", "Poppins", sans-serif;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -547,7 +547,7 @@ body .wholeWrapper {
   letter-spacing: 2px;
   margin: 0;
   color: #5e5f61;
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik", "Poppins", sans-serif;
   font-size: 1rem;
 }
 
@@ -591,7 +591,7 @@ body .wholeWrapper {
   color: #5e5f61;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik", "Poppins", sans-serif;
   color: #5e5f61;
   font-size: 0.625rem;
 }
@@ -747,7 +747,7 @@ body .wholeWrapper {
 
 .header .nav .nav__wrapper .nav__list .nav__item {
   font-size: 0.75rem;
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik", "Poppins", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -1005,7 +1005,7 @@ body .wholeWrapper {
   letter-spacing: 2px;
   font-size: 0.625rem;
   color: #5e5f61;
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik", "Poppins", sans-serif;
 }
 
 @media only screen and (orientation: portrait) and (min-width: 530px) {
@@ -1063,7 +1063,7 @@ body .wholeWrapper {
   margin: 50px auto 0 auto;
   width: 15vw;
   height: 45px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik", "Poppins", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 14px;
@@ -1327,7 +1327,7 @@ body .wholeWrapper {
 
 .description .description__wrapper .text__wrapper .description__wrapper-line .description__text-line {
   text-align: left;
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik", "Poppins", sans-serif;
   font-size: 13px;
   line-height: 1.5;
   width: 100%;
@@ -1437,7 +1437,7 @@ body .wholeWrapper {
       -ms-flex-align: center;
           align-items: center;
   text-align: left;
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik", "Poppins", sans-serif;
   font-size: 13px;
   line-height: 1.5;
   color: #454550;
@@ -1537,7 +1537,7 @@ body .wholeWrapper {
   border: none;
   cursor: pointer;
   color: #fff;
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik", "Poppins", sans-serif;
   font-size: 11px;
   font-weight: bold;
   text-transform: uppercase;
@@ -1766,7 +1766,7 @@ body .wholeWrapper {
   font-size: 1rem;
   font-weight: bold;
   width: 100%;
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik", "Poppins", sans-serif;
 }
 
 @media only screen and (orientation: portrait) and (min-width: 640px) {
@@ -2071,7 +2071,7 @@ body .wholeWrapper {
   border: none;
   cursor: pointer;
   color: #fff;
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik", "Poppins", sans-serif;
   font-size: 11px;
   font-weight: bold;
   text-transform: uppercase;
@@ -2423,7 +2423,7 @@ body .wholeWrapper {
 
 .follow .follow__link .follow__line {
   font-size: 0.625rem;
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik", "Poppins", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   padding-left: 5px;
@@ -2613,7 +2613,7 @@ body .wholeWrapper {
 
 .footer .footer__contact .footer__list .footer__item .footer__link {
   color: #fff;
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik", "Poppins", sans-serif;
   font-size: 0.75rem;
   text-decoration: none;
 }
@@ -2740,7 +2740,7 @@ body .wholeWrapper {
   line-height: 3;
   color: #fff;
   text-align: center;
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik", "Poppins", sans-serif;
 }
 
 @media only screen and (orientation: portrait) and (min-width: 640px) {
@@ -2886,7 +2886,7 @@ body .wholeWrapper {
 
 .title .title__wrapper .title__link .title__line {
   font-size: 0.75rem;
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik", "Poppins", sans-serif;
   color: #c6ac85;
 }
 
@@ -2904,7 +2904,7 @@ body .wholeWrapper {
 
 .title .title__wrapper .title__line {
   font-size: 0.75rem;
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik", "Poppins", sans-serif;
   color: #c6ac85;
 }
 
@@ -3219,7 +3219,7 @@ body .wholeWrapper {
 }
 
 .contact .contact__container .contact__information .contact__info-container .contact__info {
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik", "Poppins", sans-serif;
   color: #c6ac85;
   font-size: 14px;
   padding: 30px 0 30px 40px;
@@ -3374,7 +3374,7 @@ body .wholeWrapper {
   outline: none;
   padding: 0 10px;
   color: #c6ac85;
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik", "Poppins", sans-serif;
 }
 
 @media only screen and (orientation: landscape) and (min-width: 1248px) {
@@ -3396,7 +3396,7 @@ body .wholeWrapper {
 }
 
 .contact .contact__container .contact__wrap .contact__form .contact__text {
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik", "Poppins", sans-serif;
   margin: 10px 5%;
   width: 90%;
   height: 200px;
@@ -3428,7 +3428,7 @@ body .wholeWrapper {
   border: none;
   cursor: pointer;
   color: #fff;
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik", "Poppins", sans-serif;
   font-size: 11px;
   font-weight: bold;
   text-transform: uppercase;
@@ -3572,7 +3572,7 @@ body .wholeWrapper {
 }
 
 .priceTag .price__header-wrapper .price__header {
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik", "Poppins", sans-serif;
 }
 
 .priceTag .price__div {
@@ -3639,7 +3639,7 @@ body .wholeWrapper {
 
 .priceTag .price__div .price__line {
   padding: 0 15px 0 5px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik", "Poppins", sans-serif;
   font-size: 12px;
   font-weight: bold;
   color: #202031;
@@ -3678,7 +3678,7 @@ body .wholeWrapper {
 }
 
 .priceTag .price__div .price__price {
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik", "Poppins", sans-serif;
   font-size: 16px;
   padding-right: 20px;
   color: #c6ac85;
@@ -3972,7 +3972,7 @@ body .wholeWrapper {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font-size: 13px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik", "Poppins", sans-serif;
   color: #c6ac85;
   font-weight: bold;
   font-size: 11px;

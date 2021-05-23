@@ -5,29 +5,41 @@ burger.addEventListener('click',() => {                                         
     aside.style.height = "100vh";
     aside.style.visibility = "visible";
     aside.style.opacity = "1";
-
 })
-
 const cross = document.querySelector('.aside__close')                                   //rozwijane menu na telefonach
 cross.addEventListener('click', ()=> {
     aside.style.height = "0vh";
     aside.style.visibility = "hidden";
     aside.style.opacity = "0";
-
 })
 
-const arrowUp = document.querySelector(".goStart")                                      // przycisk powrotu na górę strony
 
-arrowUp.addEventListener('click', ()=>{
+
+
+
+
+
+                                                                                                    // przycisk powrotu na górę strony
+document.querySelector(".goStart").addEventListener('click', ()=>{
 const scrollTop = window.setInterval(function() {
     const topPosition = window.pageYOffset;
-    if ( topPosition > 0 ) {
+    if ( topPosition > 0 ) 
+    {
         window.scrollTo( 0, topPosition - 20 ); 
-    } else {
+    } 
+    else 
+    {
         window.clearInterval( scrollTop );
     }
 }, 6); 
 })
+
+
+
+
+
+
+
 window.addEventListener("scroll", () =>{
 
     if(window.innerWidth >= 768 && window.innerHeight >= 500)
@@ -41,25 +53,21 @@ window.addEventListener("scroll", () =>{
         stickyNav.style.display = "flex";
         header.style.height = "20vh";
         logo.style.display = "none";
-        nav.style.display = "none";
-        
+        nav.style.display = "none";   
     }
-
     else                                                                           // wyłącz kiedy jest na górze
     {
+        stickyNav.style.display = "none";
+        logo.style.display = "flex";
+        nav.style.display = "flex"; 
+        
         if(window.innerWidth <= 1279)                                   
         {
-            stickyNav.style.display = "none";
-            header.style.height = "25vh";
-            logo.style.display = "flex";
-            nav.style.display = "flex";                                 // zachowaj się inaczej na danej rozdzielczości
+            header.style.height = "25vh";                    // zachowaj się inaczej na danej rozdzielczości
         }
         else if(window.innerWidth >= 1280)
         {
-            stickyNav.style.display = "none";
             header.style.height = "15vh";
-            logo.style.display = "flex";
-            nav.style.display = "flex";
         }
     }
 }
