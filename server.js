@@ -11,13 +11,13 @@ app.get('/', (req, res ) => {
     res.sendFile(__dirname + '/Strona Kariny/contact.html');
 })
 
-app.post('/send', (req, res)=>{
+app.post('/', (req, res)=>{
     console.log(req.body);
 
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'm.zaniewski1995@gmail.com',
+            user: '',
             pass: '',
         }
     })
@@ -25,13 +25,15 @@ app.post('/send', (req, res)=>{
     const mailOptions = {
         from: req.body.email,
         to: 'm.zaniewski1995@gmail.com',
-        text: req.body.message
+        text: req.body.message,
     }
-    transporter.sendMail(mailOptions, (error, info)=>{
+    transporter.sendMail(mailOptions, function(error, info){
+
         if(error){
             console.log('error');
             res.send('error');
         }
+
         else{
             console.log('Email wysłany: ' + info.response);
             res.send('success');
