@@ -15,11 +15,9 @@ cross.addEventListener('click', ()=> {
 
 
 
+                   // przycisk powrotu na górę strony
 
 
-
-
-                                                                                                    // przycisk powrotu na górę strony
 document.querySelector(".goStart").addEventListener('click', ()=>{
 const scrollTop = window.setInterval(function() {
     const topPosition = window.pageYOffset;
@@ -86,17 +84,43 @@ enlarges.forEach((enlarge, index) => {
         background.style.display = "block";
         infos[index].style.display = "none";
         enlarges[index].style.display = "none";
-        wrappers[index].classList.add('active')
+        wrappers[index].classList.add('active');
         galleryX[index].style.opacity = "1";
-        pinks[index].style.display = "none"
+        pinks[index].style.display = "none";
+
     galleryX[index].addEventListener('click', () =>{
         
         background.style.display = "none";
         infos[index].style.display = "flex";
         enlarges[index].style.display = "flex";
-        wrappers[index].classList.remove('active')
+        wrappers[index].classList.remove('active');
         galleryX[index].style.opacity = "0";
-        pinks[index].style.display = "block"
+        pinks[index].style.display = "block";
     })
 })
 });
+document.addEventListener('scroll', function (){
+    const pictures = [...document.querySelectorAll('.gallery__wrapper--fadeIn')];
+    const wrappers = [...document.querySelectorAll('.gallery__wrapper')];
+    const footer = document.querySelector('.footer__contact');
+    const footerHeight = footer.outerHeight;
+    const distanceToTop = footer.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+    const windowTop = window.screenTop;
+    const distanceTop = (distanceToTop - windowTop) ;
+
+
+    if(distanceToTop <= (windowHeight - 200)){
+        const animation = document.querySelector('.gallery__animation')
+        animation.style.display = "flex"
+
+
+        const delay =  setInterval(function(){
+                 
+            pictures.forEach((picture, i) => {
+            pictures[i].classList.add('show');
+            })
+        },1500);
+    }
+})
+
