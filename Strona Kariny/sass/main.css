@@ -3881,7 +3881,7 @@ body .wholeWrapper {
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(4) {
-  background-image: url("../imgKarina/instagram4.JPEG");
+  background-image: url("../imgKarina/instagram4.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -3893,7 +3893,61 @@ body .wholeWrapper {
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(6) {
-  background-image: url("../imgKarina/instagram6.JPEG");
+  background-image: url("../imgKarina/instagram6.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(7) {
+  background-image: url("../imgKarina/instagram7.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(8) {
+  background-image: url("../imgKarina/instagram8.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(9) {
+  background-image: url("../imgKarina/instagram9.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(10) {
+  background-image: url("../imgKarina/instagram10.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(11) {
+  background-image: url("../imgKarina/instagram11.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(12) {
+  background-image: url("../imgKarina/instagram12.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(13) {
+  background-image: url("../imgKarina/instagram13.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(14) {
+  background-image: url("../imgKarina/instagram14.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(15) {
+  background-image: url("../imgKarina/instagram15.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -4089,8 +4143,8 @@ body .wholeWrapper {
 
 @media only screen and (orientation: landscape) and (min-width: 1248px) {
   .wholeGalleryWrapper .galleryPhotos .active {
-    width: 50vw;
-    height: 50vw;
+    width: 45vw;
+    height: 45vw;
   }
 }
 
@@ -4161,23 +4215,23 @@ body .wholeWrapper {
 
 @-webkit-keyframes rotate {
   0% {
-    -webkit-transform: rotate(1000deg);
-            transform: rotate(1000deg);
-  }
-  100% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(1000deg);
+            transform: rotate(1000deg);
   }
 }
 
 @keyframes rotate {
   0% {
-    -webkit-transform: rotate(1000deg);
-            transform: rotate(1000deg);
-  }
-  100% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(1000deg);
+            transform: rotate(1000deg);
   }
 }
 /*# sourceMappingURL=main.css.map */

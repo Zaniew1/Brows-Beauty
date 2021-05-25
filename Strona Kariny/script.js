@@ -39,36 +39,42 @@ const scrollTop = window.setInterval(function() {
 
 
 window.addEventListener("scroll", () =>{
-
-    if(window.innerWidth >= 768 && window.innerHeight >= 500)
-    {                                                                                   // kod rozwijający małe menu po scrollu użytkownika 
     const stickyNav = document.querySelector(".sticky");
     const header = document.querySelector(".nav");
     const logo = document.querySelector(".nav__logo");
     const nav = document.querySelector(".nav__wrapper");
-    if(window.pageYOffset >= 1 )                                            // włącz po najmniejszym scrollu 
-    {
-        stickyNav.style.display = "flex";
-        header.style.height = "20vh";
-        logo.style.display = "none";
-        nav.style.display = "none";   
+    if(window.innerWidth >= 768 && window.innerHeight >= 500)
+    {                                                                                   // kod rozwijający małe menu po scrollu użytkownika 
+
+        if(window.pageYOffset >= 1 )                                            // włącz po najmniejszym scrollu 
+        {
+            stickyNav.style.display = "flex";
+            header.style.height = "20vh";
+            logo.style.display = "none";
+            nav.style.display = "none";   
+        }
+        else                                                                           // wyłącz kiedy jest na górze
+        {
+                stickyNav.style.display = "none";
+                logo.style.display = "flex";
+                nav.style.display = "flex"; 
+                
+                if(window.innerWidth <= 1279)                                   
+                    {
+                        header.style.height = "25vh";                    // zachowaj się inaczej na danej rozdzielczości
+                    }
+                else if(window.innerWidth >= 1280)
+                    {
+                        header.style.height = "15vh";
+                    }
+        }
     }
-    else                                                                           // wyłącz kiedy jest na górze
+    if(window.innerWidth < 768)
     {
         stickyNav.style.display = "none";
         logo.style.display = "flex";
         nav.style.display = "flex"; 
-        
-        if(window.innerWidth <= 1279)                                   
-        {
-            header.style.height = "25vh";                    // zachowaj się inaczej na danej rozdzielczości
-        }
-        else if(window.innerWidth >= 1280)
-        {
-            header.style.height = "15vh";
-        }
     }
-}
 })
 
 const background = document.querySelector(".gallery__background");          //zaciemnianie tła po naciśnięciu powiększania zdjęcia w galerii
