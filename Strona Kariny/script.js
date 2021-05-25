@@ -115,11 +115,15 @@ document.addEventListener('scroll', function (){
         animation.style.display = "flex"
 
 
-        const delay =  setInterval(function(){
-                 
+        const delayIcon =  setTimeout(function(){
+            animation.style.display = "flex"
+            const delayPictures =  setTimeout(function(){
             pictures.forEach((picture, i) => {
             pictures[i].classList.add('show');
+            animation.style.display = "none"
             })
+        },1000);
+
         },1500);
     }
 })
