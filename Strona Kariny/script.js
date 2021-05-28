@@ -35,17 +35,13 @@ const scrollTop = window.setInterval(function() {
 
 
 
-
-
-
+const stickyNav = document.querySelector(".sticky");
+const header = document.querySelector(".nav");
+const logo = document.querySelector(".nav__logo");
+const nav = document.querySelector(".nav__wrapper");
 window.addEventListener("scroll", () =>{
-    const stickyNav = document.querySelector(".sticky");
-    const header = document.querySelector(".nav");
-    const logo = document.querySelector(".nav__logo");
-    const nav = document.querySelector(".nav__wrapper");
     if(window.innerWidth >= 768 && window.innerHeight >= 500)
-    {                                                                                   // kod rozwijający małe menu po scrollu użytkownika 
-
+    {                                                                           // kod rozwijający małe menu po scrollu użytkownika 
         if(window.pageYOffset >= 1 )                                            // włącz po najmniejszym scrollu 
         {
             stickyNav.style.display = "flex";
@@ -58,17 +54,21 @@ window.addEventListener("scroll", () =>{
                 stickyNav.style.display = "none";
                 logo.style.display = "flex";
                 nav.style.display = "flex"; 
-                
+    
                 if(window.innerWidth <= 1279)                                   
                     {
                         header.style.height = "25vh";                    // zachowaj się inaczej na danej rozdzielczości
                     }
-                else if(window.innerWidth >= 1280)
+                else 
                     {
                         header.style.height = "15vh";
                     }
         }
     }
+})
+
+
+window.addEventListener('resize', ()=>{
     if(window.innerWidth < 768)
     {
         stickyNav.style.display = "none";
@@ -105,7 +105,14 @@ enlarges.forEach((enlarge, index) => {
     })
 })
 });
-document.addEventListener('scroll', function (){
+
+
+
+
+let pictureIndex = 0;
+
+document.addEventListener('scroll', () =>
+{
     const pictures = [...document.querySelectorAll('.gallery__wrapper--fadeIn')];
     const wrappers = [...document.querySelectorAll('.gallery__wrapper')];
     const footer = document.querySelector('.footer__contact');
@@ -114,23 +121,18 @@ document.addEventListener('scroll', function (){
     const windowHeight = window.innerHeight;
     const windowTop = window.screenTop;
     const distanceTop = (distanceToTop - windowTop) ;
+    const animation = document.querySelector('.gallery__animation')
 
-
-    if(distanceToTop <= (windowHeight - 200)){
-        const animation = document.querySelector('.gallery__animation')
-        animation.style.display = "flex"
-
-
-        const delayIcon =  setTimeout(function(){
+    if(pictureIndex >= pictures.length) return animation.style.display = "none"
+    if(distanceToTop <= (windowHeight -200) && pictureIndex < pictures.length)
+        {
             animation.style.display = "flex"
-            const delayPictures =  setTimeout(function(){
-            pictures.forEach((picture, i) => {
-            pictures[i].classList.add('show');
-            animation.style.display = "none"
-            })
-        },1000);
 
-        },1500);
-    }
+            for (let i=0; i < 3; i++)
+            {
+                pictures[`${pictureIndex++}`].classList.add('show');
+            }
+        }
+
 })
 

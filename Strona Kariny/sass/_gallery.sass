@@ -45,10 +45,10 @@
                 height: 70vh
             @include mq-land(tablet)
                 width: 27vw
-                height: 35vh
+                height: 27vw
             @include mq-land(desktop)
                 width: 27vw
-                height: 45vh
+                height: 27vw
             &:hover .gallery__pink
                 background-color: rgba( 250, 239, 237, 0.7)
                 content: ""
@@ -63,35 +63,35 @@
                 top: 50%
                 opacity: 1
             &:nth-of-type(1)
-                @include pictureJpg (instagram1)
+                @include pictureJpg (gallery1)
             &:nth-of-type(2)
-                @include pictureJpg (instagram2)
+                @include pictureJpg (gallery2)
             &:nth-of-type(3)
-                @include pictureJpg (instagram3)
+                @include pictureJpg (gallery3)
             &:nth-of-type(4)
-                @include pictureJpg (instagram4)
+                @include pictureJpg (gallery4)
             &:nth-of-type(5)
-                @include pictureJpg(instagram5)
+                @include pictureJpg(gallery5)
             &:nth-of-type(6)
-                @include pictureJpg (instagram6)
+                @include pictureJpg (gallery6)
             &:nth-of-type(7)
-                @include pictureJpg (instagram7)
+                @include pictureJpg (gallery7)
             &:nth-of-type(8)
-                @include pictureJpg (instagram8)
+                @include pictureJpg (gallery8)
             &:nth-of-type(9)
-                @include pictureJpg (instagram9)
+                @include pictureJpg (gallery9)
             &:nth-of-type(10)
-                @include pictureJpg (instagram10)
+                @include pictureJpg (gallery10)
             &:nth-of-type(11)
-                @include pictureJpg(instagram11)
+                @include pictureJpg(instagram1)
             &:nth-of-type(12)
-                @include pictureJpg (instagram12)
+                @include pictureJpg (instagram2)
             &:nth-of-type(13)
-                @include pictureJpg (instagram13)
+                @include pictureJpg (instagram3)
             &:nth-of-type(14)
-                @include pictureJpg(instagram14)
+                @include pictureJpg(instagram4)
             &:nth-of-type(15)
-                @include pictureJpg (instagram15)
+                @include pictureJpg (instagram5)
             .gallery__enlarge-div
                 @include position-center
                 top: 0
@@ -163,6 +163,7 @@
             position: fixed
             z-index: 10
             content: none
+            transition: .4s ease-in-out
             @include mq(tablet)
                 width: 600px
                 height: 600px
@@ -176,8 +177,8 @@
                 width: 600px
                 height: 600px
             @include mq-land(desktop)
-                width: 45vw
-                height: 45vw
+                width: 900px
+                height: 900px
         .show
             display: flex
             opacity: 1
@@ -204,3 +205,4 @@
                     height: 100px
                 .gallery__animation-circle
                     animation: rotate 1s infinite
+       

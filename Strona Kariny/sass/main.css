@@ -2304,7 +2304,7 @@ body .wholeWrapper {
 }
 
 .picture .picture__wrapper:nth-of-type(4) {
-  background-image: url("../imgKarina/instagram4.JPEG");
+  background-image: url("../imgKarina/instagram4.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -2316,7 +2316,7 @@ body .wholeWrapper {
 }
 
 .picture .picture__wrapper:nth-of-type(6) {
-  background-image: url("../imgKarina/instagram6.JPEG");
+  background-image: url("../imgKarina/instagram6.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -2577,7 +2577,7 @@ body .wholeWrapper {
 
 @media only screen and (orientation: portrait) and (min-width: 768px) {
   .footer .footer__contact .footer__list .footer__item {
-    margin: 0 25px 0 10px;
+    margin: 0 0  0 80px;
   }
 }
 
@@ -2601,13 +2601,13 @@ body .wholeWrapper {
 
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
   .footer .footer__contact .footer__list .footer__item {
-    margin-right: 80px;
+    margin: 0 50px 0 150px;
   }
 }
 
 @media only screen and (orientation: landscape) and (min-width: 1440px) {
   .footer .footer__contact .footer__list .footer__item {
-    margin: 0 150px;
+    margin: 0 120px 0 220px;
   }
 }
 
@@ -3831,14 +3831,14 @@ body .wholeWrapper {
 @media only screen and (orientation: landscape) and (min-width: 768px) {
   .wholeGalleryWrapper .galleryPhotos .gallery__wrapper {
     width: 27vw;
-    height: 35vh;
+    height: 27vw;
   }
 }
 
 @media only screen and (orientation: landscape) and (min-width: 1248px) {
   .wholeGalleryWrapper .galleryPhotos .gallery__wrapper {
     width: 27vw;
-    height: 45vh;
+    height: 27vw;
   }
 }
 
@@ -3863,91 +3863,91 @@ body .wholeWrapper {
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(1) {
-  background-image: url("../imgKarina/instagram1.jpg");
+  background-image: url("../imgKarina/gallery1.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(2) {
-  background-image: url("../imgKarina/instagram2.jpg");
+  background-image: url("../imgKarina/gallery2.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(3) {
-  background-image: url("../imgKarina/instagram3.jpg");
+  background-image: url("../imgKarina/gallery3.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(4) {
-  background-image: url("../imgKarina/instagram4.jpg");
+  background-image: url("../imgKarina/gallery4.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(5) {
-  background-image: url("../imgKarina/instagram5.jpg");
+  background-image: url("../imgKarina/gallery5.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(6) {
-  background-image: url("../imgKarina/instagram6.jpg");
+  background-image: url("../imgKarina/gallery6.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(7) {
-  background-image: url("../imgKarina/instagram7.jpg");
+  background-image: url("../imgKarina/gallery7.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(8) {
-  background-image: url("../imgKarina/instagram8.jpg");
+  background-image: url("../imgKarina/gallery8.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(9) {
-  background-image: url("../imgKarina/instagram9.jpg");
+  background-image: url("../imgKarina/gallery9.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(10) {
-  background-image: url("../imgKarina/instagram10.jpg");
+  background-image: url("../imgKarina/gallery10.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(11) {
-  background-image: url("../imgKarina/instagram11.jpg");
+  background-image: url("../imgKarina/instagram1.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(12) {
-  background-image: url("../imgKarina/instagram12.jpg");
+  background-image: url("../imgKarina/instagram2.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(13) {
-  background-image: url("../imgKarina/instagram13.jpg");
+  background-image: url("../imgKarina/instagram3.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(14) {
-  background-image: url("../imgKarina/instagram14.jpg");
+  background-image: url("../imgKarina/instagram4.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(15) {
-  background-image: url("../imgKarina/instagram15.jpg");
+  background-image: url("../imgKarina/instagram5.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -4111,6 +4111,8 @@ body .wholeWrapper {
   position: fixed;
   z-index: 10;
   content: none;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
 }
 
 @media only screen and (orientation: portrait) and (min-width: 768px) {
@@ -4143,8 +4145,8 @@ body .wholeWrapper {
 
 @media only screen and (orientation: landscape) and (min-width: 1248px) {
   .wholeGalleryWrapper .galleryPhotos .active {
-    width: 45vw;
-    height: 45vw;
+    width: 900px;
+    height: 900px;
   }
 }
 
