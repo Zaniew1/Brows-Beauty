@@ -3923,31 +3923,31 @@ body .wholeWrapper {
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(11) {
-  background-image: url("../imgKarina/instagram1.jpg");
+  background-image: url("../imgKarina/gallery11.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(12) {
-  background-image: url("../imgKarina/instagram2.jpg");
+  background-image: url("../imgKarina/gallery12.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(13) {
-  background-image: url("../imgKarina/instagram3.jpg");
+  background-image: url("../imgKarina/gallery13.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(14) {
-  background-image: url("../imgKarina/instagram4.jpg");
+  background-image: url("../imgKarina/gallery14.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(15) {
-  background-image: url("../imgKarina/instagram5.jpg");
+  background-image: url("../imgKarina/gallery15.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -4039,31 +4039,32 @@ body .wholeWrapper {
   top: 95%;
   opacity: 0;
   color: #fff;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+  text-align: center;
 }
 
 @media only screen and (orientation: portrait) and (min-width: 768px) {
   .wholeGalleryWrapper .galleryPhotos .gallery__wrapper .gallery__info {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 
 @media only screen and (orientation: landscape) and (min-width: 768px) {
   .wholeGalleryWrapper .galleryPhotos .gallery__wrapper .gallery__info {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 
 @media only screen and (orientation: landscape) and (min-width: 1248px) {
   .wholeGalleryWrapper .galleryPhotos .gallery__wrapper .gallery__info {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
 @media only screen and (orientation: landscape) and (min-width: 1440px) {
   .wholeGalleryWrapper .galleryPhotos .gallery__wrapper .gallery__info {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 

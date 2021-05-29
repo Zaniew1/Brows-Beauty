@@ -83,15 +83,15 @@
             &:nth-of-type(10)
                 @include pictureJpg (gallery10)
             &:nth-of-type(11)
-                @include pictureJpg(instagram1)
+                @include pictureJpg(gallery11)
             &:nth-of-type(12)
-                @include pictureJpg (instagram2)
+                @include pictureJpg (gallery12)
             &:nth-of-type(13)
-                @include pictureJpg (instagram3)
+                @include pictureJpg (gallery13)
             &:nth-of-type(14)
-                @include pictureJpg(instagram4)
+                @include pictureJpg(gallery14)
             &:nth-of-type(15)
-                @include pictureJpg (instagram5)
+                @include pictureJpg (gallery15)
             .gallery__enlarge-div
                 @include position-center
                 top: 0
@@ -130,15 +130,16 @@
                 top: 95%
                 opacity: 0
                 color: $white-bgc
-                transition: 0.3s ease-in-out
+                transition: width 0.3s ease-in-out
+                text-align: center
                 @include mq (tablet)
-                    font-size: 13px
+                    font-size: 12px
                 @include mq-land (tablet)
-                    font-size: 13px
+                    font-size: 12px
                 @include mq-land(desktop)
-                    font-size: 16px
+                    font-size: 14px
                 @include mq-land(desktop-wide)
-                    font-size: 22px
+                    font-size: 20px
             .gallery__x
                 opacity: 0
                 position: absolute
