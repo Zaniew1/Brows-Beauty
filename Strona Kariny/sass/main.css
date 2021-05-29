@@ -3864,7 +3864,6 @@ body .wholeWrapper {
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:hover .gallery__info {
-  width: 50%;
   height: 10%;
   opacity: 1;
 }
@@ -4046,13 +4045,13 @@ body .wholeWrapper {
   font-size: 11px;
   text-transform: uppercase;
   background-color: #c6ac85;
-  width: 0;
+  width: 50%;
   height: 0;
   top: 95%;
   opacity: 0;
   color: #fff;
-  -webkit-transition: width 0.3s ease-in-out;
-  transition: width 0.3s ease-in-out;
+  -webkit-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
   text-align: center;
 }
 
