@@ -4057,23 +4057,29 @@ body .wholeWrapper {
 
 @media only screen and (orientation: portrait) and (min-width: 768px) {
   .wholeGalleryWrapper .galleryPhotos .gallery__wrapper .gallery__info {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 
 @media only screen and (orientation: landscape) and (min-width: 768px) {
   .wholeGalleryWrapper .galleryPhotos .gallery__wrapper .gallery__info {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 
 @media only screen and (orientation: landscape) and (min-width: 1248px) {
   .wholeGalleryWrapper .galleryPhotos .gallery__wrapper .gallery__info {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
 @media only screen and (orientation: landscape) and (min-width: 1440px) {
+  .wholeGalleryWrapper .galleryPhotos .gallery__wrapper .gallery__info {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1920px) {
   .wholeGalleryWrapper .galleryPhotos .gallery__wrapper .gallery__info {
     font-size: 20px;
   }
