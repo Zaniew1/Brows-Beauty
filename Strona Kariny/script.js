@@ -124,7 +124,7 @@ document.addEventListener('scroll', () =>
     const animation = document.querySelector('.gallery__animation')
 
     if(pictureIndex >= pictures.length) return animation.style.display = "none"
-    if(distanceToTop <= (windowHeight -200) && pictureIndex < pictures.length)
+    if(distanceToTop <= (windowHeight ) && pictureIndex < pictures.length)
         {
             animation.style.display = "flex"
 

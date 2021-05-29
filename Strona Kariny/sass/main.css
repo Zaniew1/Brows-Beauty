@@ -224,7 +224,7 @@ body .wholeWrapper {
 @media only screen and (orientation: landscape) and (min-width: 768px) {
   .header .sticky {
     height: 7vh;
-    min-height: 50px;
+    min-height: 65px;
   }
 }
 
@@ -2461,6 +2461,18 @@ body .wholeWrapper {
 }
 
 @media only screen and (orientation: landscape) and (min-width: 1248px) {
+  .follow .follow__link .follow__line {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1440px) {
+  .follow .follow__link .follow__line {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1920px) {
   .follow .follow__link .follow__line {
     font-size: 12px;
   }
