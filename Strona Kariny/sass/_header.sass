@@ -73,6 +73,11 @@
                         padding-right: 5px
                         @include mq(tablet-wide)
                             font-size: 22px
+    .display__sticky
+        display: flex
+    .display__nav-logo
+        display: none
+        opacity: 0 
     .nav
         @include flex (space-between, center, row)
         height: 35vh
@@ -95,7 +100,7 @@
             background-color: #fff
             width: 95vw
             margin: 0 auto
-            height: 15vh
+            height: 15vh   
         .nav__logo
             @include flex(center, center, column) 
             background-color: transparent

@@ -18,7 +18,7 @@ cross.addEventListener('click', ()=> {
                    // przycisk powrotu na górę strony
 
 
-document.querySelector(".goStart").addEventListener('click', ()=>{
+document.querySelector(".go-start").addEventListener('click', ()=>{
 const scrollTop = window.setInterval(function() {
     const topPosition = window.pageYOffset;
     if ( topPosition > 0 ) 
@@ -44,25 +44,17 @@ window.addEventListener("scroll", () =>{
     {                                                                           // kod rozwijający małe menu po scrollu użytkownika 
         if(window.pageYOffset >= 1 )                                            // włącz po najmniejszym scrollu 
         {
-            stickyNav.style.display = "flex";
-            header.style.height = "20vh";
-            logo.style.display = "none";
-            nav.style.display = "none";   
+            stickyNav.classList.add('display__sticky')
+            logo.classList.add('display__nav-logo')
+            nav.classList.add('display__nav-logo')
         }
         else                                                                           // wyłącz kiedy jest na górze
         {
-                stickyNav.style.display = "none";
-                logo.style.display = "flex";
-                nav.style.display = "flex"; 
+            stickyNav.classList.remove('display__sticky')
+            logo.classList.remove('display__nav-logo')
+            nav.classList.remove('display__nav-logo')
     
-                if(window.innerWidth <= 1279)                                   
-                    {
-                        header.style.height = "25vh";                    // zachowaj się inaczej na danej rozdzielczości
-                    }
-                else 
-                    {
-                        header.style.height = "15vh";
-                    }
+
         }
     }
 })
@@ -71,9 +63,9 @@ window.addEventListener("scroll", () =>{
 window.addEventListener('resize', ()=>{
     if(window.innerWidth < 768)
     {
-        stickyNav.style.display = "none";
-        logo.style.display = "flex";
-        nav.style.display = "flex"; 
+        stickyNav.classList.remove('display__sticky')
+        logo.classList.remove('display__nav-logo')
+        nav.classList.remove('display__nav-logo')
     }
 })
 
@@ -124,7 +116,7 @@ document.addEventListener('scroll', () =>
     const animation = document.querySelector('.gallery__animation')
 
     if(pictureIndex >= pictures.length) return animation.style.display = "none"
-    if(distanceToTop <= (windowHeight ) && pictureIndex < pictures.length)
+    else if(distanceToTop <= (windowHeight ) && pictureIndex < pictures.length)
         {
             animation.style.display = "flex"
 
