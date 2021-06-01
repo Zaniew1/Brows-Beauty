@@ -15,10 +15,10 @@ cross.addEventListener('click', ()=> {
 
 
 
-                   // przycisk powrotu na górę strony
+       
 
 
-document.querySelector(".go-start").addEventListener('click', ()=>{
+document.querySelector(".go-start").addEventListener('click', ()=>{                     // przycisk powrotu na górę strony
 const scrollTop = window.setInterval(function() {
     const topPosition = window.pageYOffset;
     if ( topPosition > 0 ) 
@@ -74,7 +74,7 @@ const wrappers = [...document.querySelectorAll('.gallery__wrapper')];       //di
 const enlarges = [...document.querySelectorAll('.gallery__enlarge-div')];   //div po naciśnięciu którego zdjęcie się powiększa
 const infos = [...document.querySelectorAll('.gallery__info')];             //dolna informacja na zdjęciu w galerii
 const galleryX = [...document.querySelectorAll('.gallery__x')];             //wyłącznik powiększenia zdjęcia
-const pinks = [...document.querySelectorAll('.gallery__pink')]              //zmienianie koloru tła zdjęcia na hoverze
+const pinks = [...document.querySelectorAll('.gallery__pink')];             //zmienianie koloru tła zdjęcia na hoverze
 enlarges.forEach((enlarge, index) => {
 
     enlarge.addEventListener('click', ()=>  {
