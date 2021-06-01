@@ -8,7 +8,7 @@ app.use(express.static('Strona Kariny'));
 app.use(express.json());
 
 app.get('/', (req, res ) => {
-    res.sendFile(__dirname + '/Strona Kariny/contact.html');
+    res.sendFile(__dirname + '/Strona Kariny/html/contact.html');
 })
 
 app.post('/', (req, res)=>{
@@ -17,14 +17,14 @@ app.post('/', (req, res)=>{
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: '',
-            pass: '',
+            user: 'karina26work@gmail.com',
+            pass: 'brwibrows',
         }
     })
 
     const mailOptions = {
         from: req.body.email,
-        to: 'm.zaniewski1995@gmail.com',
+        to: 'karina26work@gmail.com',
         text: req.body.message,
     }
     transporter.sendMail(mailOptions, function(error, info){
