@@ -85,6 +85,7 @@ enlarges.forEach((enlarge, index) => {
         wrappers[index].classList.add('active');
         galleryX[index].style.opacity = "1";
         pinks[index].style.display = "none";
+        stickyNav.classList.remove('display__sticky')
 
     galleryX[index].addEventListener('click', () =>{
         
@@ -94,6 +95,7 @@ enlarges.forEach((enlarge, index) => {
         wrappers[index].classList.remove('active');
         galleryX[index].style.opacity = "0";
         pinks[index].style.display = "block";
+        
     })
 })
 });

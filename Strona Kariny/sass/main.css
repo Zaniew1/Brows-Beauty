@@ -4160,8 +4160,8 @@ body .wholeWrapper {
 
 @media only screen and (orientation: landscape) and (min-width: 768px) {
   .wholeGalleryWrapper .galleryPhotos .active {
-    width: 45vw;
-    height: 45vw;
+    width: 40vw;
+    height: 40vw;
   }
 }
 
