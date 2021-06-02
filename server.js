@@ -8,7 +8,7 @@ app.use(express.static('Strona Kariny'));
 app.use(express.json());
 
 app.get('/', (req, res ) => {
-    res.sendFile(__dirname + '/Strona Kariny/html/contact.html');
+    res.sendFile(__dirname + '/html/contact.html');
 })
 
 app.post('/', (req, res)=>{
