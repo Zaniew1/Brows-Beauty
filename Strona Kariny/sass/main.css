@@ -4172,6 +4172,13 @@ body .wholeWrapper {
   }
 }
 
+@media only screen and (orientation: landscape) and (min-width: 1920px) {
+  .wholeGalleryWrapper .galleryPhotos .active {
+    width: 30vw;
+    height: 30vw;
+  }
+}
+
 .wholeGalleryWrapper .galleryPhotos .show {
   display: -webkit-box;
   display: -ms-flexbox;
