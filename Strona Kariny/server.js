@@ -17,14 +17,14 @@ app.post('/', (req, res)=>{
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'karina26work@gmail.com',
-            pass: 'brwibrows',
+            user: 'm.zaniewski1995@gmail.com',
+            pass: 'grecja12321',
         }
     })
 
     const mailOptions = {
         from: req.body.email,
-        to: 'karina26work@gmail.com',
+        to: 'm.zaniewski1995@gmail.com',
         text: req.body.message,
     }
     transporter.sendMail(mailOptions, function(error, info){
