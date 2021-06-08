@@ -4245,6 +4245,159 @@ body .wholeWrapper {
           animation: rotate 1s infinite;
 }
 
+.thank__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 50vh;
+  width: 100%;
+}
+
+@media only screen and (orientation: portrait) and (min-width: 768px) {
+  .thank__wrapper {
+    height: 65vh;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 768px) {
+  .thank__wrapper {
+    height: 65vh;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1024px) {
+  .thank__wrapper {
+    height: 70vh;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1248px) {
+  .thank__wrapper {
+    height: 70vh;
+  }
+}
+
+.thank__wrapper .thank__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.thank__wrapper .thank__wrap .thank__header2 {
+  text-align: center;
+  font-size: 26px;
+  color: #c6ac85;
+  font-family: "Rubik", "Poppins", sans-serif;
+  margin-bottom: 30px;
+}
+
+@media only screen and (orientation: portrait) and (min-width: 768px) {
+  .thank__wrapper .thank__wrap .thank__header2 {
+    font-size: 66px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 768px) {
+  .thank__wrapper .thank__wrap .thank__header2 {
+    font-size: 66px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1024px) {
+  .thank__wrapper .thank__wrap .thank__header2 {
+    font-size: 70px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1248px) {
+  .thank__wrapper .thank__wrap .thank__header2 {
+    font-size: 80px;
+  }
+}
+
+.thank__wrapper .thank__button {
+  width: 35vw;
+  height: 40px;
+  background-color: #454550;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-family: "Rubik", "Poppins", sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+@media only screen and (orientation: portrait) and (min-width: 768px) {
+  .thank__wrapper .thank__button {
+    width: 30vw;
+    height: 8%;
+    font-size: 13px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 768px) {
+  .thank__wrapper .thank__button {
+    width: 30vw;
+    height: 8%;
+    font-size: 13px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1024px) {
+  .thank__wrapper .thank__button {
+    width: 12vw;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1248px) {
+  .thank__wrapper .thank__button {
+    font-size: 14px;
+    height: 60px;
+  }
+}
+
+.thank__wrapper .thank__button .thank__button-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #fff;
+}
+
 @-webkit-keyframes rotate {
   0% {
     -webkit-transform: rotate(0deg);

@@ -1,0 +1,50 @@
+.thank__wrapper
+    @include flex(center, center, column)
+    height: 50vh
+    width: 100%
+    @include mq (tablet)
+        height: 65vh
+    @include mq-land(tablet)
+        height: 65vh
+    @include mq-land (tablet-wide)
+        height: 70vh
+    @include mq-land (desktop)
+        height: 70vh
+    .thank__wrap
+        @include flex(center, center, column)
+        .thank__header2
+            text-align: center
+            font-size: 26px
+            color: $gold-bgc
+            font-family: $family-rubik
+            margin-bottom: 30px
+            @include mq (tablet)
+                font-size: 66px
+            @include mq-land(tablet)
+                font-size: 66px
+            @include mq-land (tablet-wide)
+                font-size: 70px
+            @include mq-land (desktop)
+                font-size: 80px
+    .thank__button
+        @include button-style
+        margin-bottom: 30px
+        @include mq (tablet)
+            width: 30vw
+            height: 8%
+            font-size: 13px
+        @include mq-land(tablet)
+            width: 30vw
+            height: 8%
+            font-size: 13px
+        @include mq-land (tablet-wide)
+            width: 12vw
+        @include mq-land (desktop)
+            font-size: 14px
+            height: 60px
+        .thank__button-link
+            @include flex(center, center, row)
+            width: 100%
+            height: 100%
+            text-decoration: none
+            color: $white-bgc
