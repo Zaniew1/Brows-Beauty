@@ -45,12 +45,13 @@
                     font-size: $font-small
                     text-decoration: none
                     @include mq(phablet)
-                        font-size: 16px
+                        font-size: 10px
                     @include mq(tablet-wide)
-                        font-size: 20px
+                        font-size: 10px
                     @include mq-land(tablet)
-                        font-size: 14px
-
+                        font-size: 10px
+                    @include mq-land(desktop)
+                        font-size: 11px
                     &:hover
                         color: $gold-bgc
                         cursor: pointer

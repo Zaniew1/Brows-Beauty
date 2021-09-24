@@ -30,7 +30,9 @@
             width: 90vw
             height: 90vw
             margin: 20px auto
-            transition: .3s ease-in-out
+            transition: .5s ease-in-out
+            opacity: 1
+            transform: translate(0)
             @include mq(tablet)
                 width: 45vw
                 height: 30vh
@@ -67,6 +69,7 @@
                 @include pictureJpg (gallery2)
             &:nth-of-type(3)
                 @include pictureJpg (gallery3)
+                background-position: 65% 35%
             &:nth-of-type(4)
                 @include pictureJpg (gallery4)
             &:nth-of-type(5)
@@ -156,10 +159,15 @@
                     font-size: 32px 
                 @include mq-land(desktop)
                     font-size: 36px
-        .gallery__wrapper--fadeIn
-            display: none
+        .gallery__wrapper--fadeIn-one
+            transform: translateY(50px)
             opacity: 0
-            transition: .3s ease-in-out         
+        .gallery__wrapper--fadeIn-two
+            transform: translate(-20px)
+            opacity: 0
+        .gallery__wrapper--fadeIn-three
+            transform: translate(-20px)
+            opacity: 0
         .active
             @include position-center
             position: fixed

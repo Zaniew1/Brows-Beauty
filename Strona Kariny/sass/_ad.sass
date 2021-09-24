@@ -6,7 +6,7 @@
     background-position: center
     background-size: cover
     text-align: center
-    @include picturePng (ad)
+    @include pictureJpg (ad1)
     @include mq(tablet-wide)
         width: 70vw
     @include mq-land(phone)
@@ -16,7 +16,7 @@
         height: 50vh
         min-height: 300px
     @include mq-land(desktop)
-        height: 45vh
+        height: 55vh
     @include mq-land(desktop-wide)
         width: 50vw
         height: 50vh
@@ -29,27 +29,31 @@
         transform: translate(-50%, -50%)
         font-family: $family-over
         color:  $white-bgc
-        font-size: $font-big
+        font-size: 16px
+        background-color: rgba(0,0,0,0.6)
+        padding: 5px 10px
+        margin: 10px auto
         @include mq(phone)
-            font-size: 32px
+            font-size: 16px
         @include mq(tablet)
-            font-size: 38px
+            font-size: 24px
         @include mq(tablet-wide)
-            font-size: 42px
+            font-size: 32px
         @include mq-land(phablet)
-            font-size: 28px
+            font-size: 16px
         @include mq-land(tablet)
-            font-size: 38px
+            font-size: 24px
         @include mq-land(tablet-wide)
-            font-size: 46px
+            font-size: 32px
         @include mq-land(desktop)
-            font-size: 56px
+            font-size: 38px
     .ad__price
         @include position-center
         color: $white-bgc
         font-weight: bold
         font-size: $font-large
         font-family: $family-playfair
+        margin: 5px auto
         @include mq(phone)
             font-size: 40px
         @include mq(phablet)
@@ -66,25 +70,64 @@
             font-size: 60px
         @include mq-land(desktop)
             font-size: 80px
+        .ad__price-span
+            position: relative
+            &::after
+                top: 50%
+                left: 50%
+                position: absolute
+                content: ''
+                display: block
+                width: 60px
+                height: 5px
+                background-color: red
+                transform:  translate( -50% , 150% ) rotate(30deg)
+                @include mq(tablet)
+                    width: 80px
+                @include mq-land(tablet)
+                    width: 80px
+                @include mq-land(desktop)
+                    width: 120px
+            &::before
+                top: 50%
+                left: 50%
+                position: absolute
+                content: ''
+                display: block
+                width: 60px
+                height: 5px
+                background-color: red
+                transform:  translate( -50% , 150% ) rotate(150deg)
+                @include mq(tablet)
+                    width: 80px
+                @include mq-land(tablet)
+                    width: 80px
+                @include mq-land(desktop)
+                    width: 120px
     .ad__line
         position: absolute
         transform: translate(-50%, -50%)
         top: 85%
         left: 50%
         color: $white-bgc
-        font-size: $font-medium
+        font-size: 12px
+        background-color: rgba(0,0,0,0.6)
         font-weight: bold
-        width: 100%
+        padding: 5px 10px
         font-family: $family-rubik
+        margin: 5px auto
         @include mq(phablet)
-            font-size: 24px
+            font-size: 14px
+        @include mq(tablet)
+            font-size: 16px
+            padding: 10px 15px
         @include mq(tablet-wide)
             font-size: 26px
         @include mq-land(phablet)
             font-size: 14px
         @include mq-land(tablet)
-            font-size: 18px
+            font-size: 16px
+            padding: 10px 15px
         @include mq-land(tablet-wide)
-            font-size: 24px
-        @include mq-land(desktop)
-            font-size: 28px
+            font-size: 22px
+       

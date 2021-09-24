@@ -6,7 +6,7 @@
     @include mq (tablet)
         flex-direction: row
         flex-wrap: wrap
-        width: 80vw
+        width: 70vw
         margin: 10vh auto
     @include mq-land(phone)
         width: 90vw
@@ -21,50 +21,52 @@
         margin: 10vh auto
     .price__header-wrapper
         @include flex(center, center, row)
-        width: 80vw
-        height: 5vh
+        width: 80%
+        height: 2px
         margin: 0 auto
         color: $font-color
         border-bottom: 1px solid $gold-bgc
+    .price__kind-of-service
+        @include flex(center, center,row)
+        margin: 15px auto
+        width: 100%
         @include mq (tablet)
-            width: 70vw
-            height: 10vh
-        @include mq-land(phone)
-            width: 80vw
-            height: 25vh
-        @include mq-land(tablet)
-            width: 60vw
-            height: 5vh
-        @include mq-land(tablet-wide)
-            width: 70vw
-            height: 0vh
-        .price__header
-            font-family: $family-rubik
+            margin: 25px auto
+        @include mq-land (tablet)
+            margin: 25px auto
+        .price__kind-title
+            font-family: $family-playfairSC
+            font-size: 14px
+            padding-bottom: 10px
+            border-bottom: 1px solid $gold-bgc
+            @include mq(tablet)
+                font-size: 18px
+            @include mq-land(tablet)
+                font-size: 18px
+            @include mq-land(desktop)
+                width: 7%
+                text-align: center
+                font-size: 22px
+                padding-bottom: 15px
     .price__div
         @include flex(space-between, center, row)
         display: flex
         justify-content: space-between
         align-items: center
-        height: 12vh
+        padding: 15px 10px
         width: 80vw
         margin: 0 auto
         @include mq (tablet)
-            justify-content: space-around
-            height: 15vh
+            justify-content: space-between
             flex-grow: 1
-            width: 30vw
-            margin: 0
+            width: 60vw
+            margin: 0 auto
         @include mq-land(phone)
-            height: 20vh
             width: 70vw
         @include mq-land(tablet)
-            height: 13vh
+            flex-grow: 0
         @include mq-land(tablet-wide)
             justify-content: space-between
-            height: 15vh
-            flex-grow: 1
-            width: 30vw
-            margin: 0
         .price__line
             padding: 0 15px 0 5px
             font-family: $family-rubik
@@ -79,7 +81,7 @@
                 padding-left: 60px
                 font-size: 20px
             @include mq-land(tablet)
-                padding-left: 10vw
+                padding-left: 5vw
             @include mq-land(desktop)
                 font-size: 16px 
                 padding-right: 12vw
@@ -100,3 +102,5 @@
                 padding-right: 5vw
                 font-weight: bold
                 font-size: 24px
+    .price__div-margin
+        margin-bottom: 50px

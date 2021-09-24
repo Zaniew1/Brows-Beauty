@@ -1614,7 +1614,7 @@ body .wholeWrapper {
   background-position: center;
   background-size: cover;
   text-align: center;
-  background-image: url("../imgKarina/ad.png");
+  background-image: url("../imgKarina/ad1.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -1641,7 +1641,7 @@ body .wholeWrapper {
 
 @media only screen and (orientation: landscape) and (min-width: 1248px) {
   .ad {
-    height: 45vh;
+    height: 55vh;
   }
 }
 
@@ -1662,48 +1662,51 @@ body .wholeWrapper {
           transform: translate(-50%, -50%);
   font-family: "Cormorant Garamond", serif;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 5px 10px;
+  margin: 10px auto;
 }
 
 @media only screen and (orientation: portrait) and (min-width: 530px) {
   .ad .ad__new {
-    font-size: 32px;
+    font-size: 16px;
   }
 }
 
 @media only screen and (orientation: portrait) and (min-width: 768px) {
   .ad .ad__new {
-    font-size: 38px;
+    font-size: 24px;
   }
 }
 
 @media only screen and (orientation: portrait) and (min-width: 1024px) {
   .ad .ad__new {
-    font-size: 42px;
+    font-size: 32px;
   }
 }
 
 @media only screen and (orientation: landscape) and (min-width: 640px) {
   .ad .ad__new {
-    font-size: 28px;
+    font-size: 16px;
   }
 }
 
 @media only screen and (orientation: landscape) and (min-width: 768px) {
   .ad .ad__new {
-    font-size: 38px;
+    font-size: 24px;
   }
 }
 
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
   .ad .ad__new {
-    font-size: 46px;
+    font-size: 32px;
   }
 }
 
 @media only screen and (orientation: landscape) and (min-width: 1248px) {
   .ad .ad__new {
-    font-size: 56px;
+    font-size: 38px;
   }
 }
 
@@ -1717,6 +1720,7 @@ body .wholeWrapper {
   font-weight: bold;
   font-size: 2rem;
   font-family: "Playfair Display", serif;
+  margin: 5px auto;
 }
 
 @media only screen and (orientation: portrait) and (min-width: 530px) {
@@ -1767,6 +1771,72 @@ body .wholeWrapper {
   }
 }
 
+.ad .ad__price .ad__price-span {
+  position: relative;
+}
+
+.ad .ad__price .ad__price-span::after {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  background-color: red;
+  -webkit-transform: translate(-50%, 150%) rotate(30deg);
+          transform: translate(-50%, 150%) rotate(30deg);
+}
+
+@media only screen and (orientation: portrait) and (min-width: 768px) {
+  .ad .ad__price .ad__price-span::after {
+    width: 80px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 768px) {
+  .ad .ad__price .ad__price-span::after {
+    width: 80px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1248px) {
+  .ad .ad__price .ad__price-span::after {
+    width: 120px;
+  }
+}
+
+.ad .ad__price .ad__price-span::before {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  background-color: red;
+  -webkit-transform: translate(-50%, 150%) rotate(150deg);
+          transform: translate(-50%, 150%) rotate(150deg);
+}
+
+@media only screen and (orientation: portrait) and (min-width: 768px) {
+  .ad .ad__price .ad__price-span::before {
+    width: 80px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 768px) {
+  .ad .ad__price .ad__price-span::before {
+    width: 80px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1248px) {
+  .ad .ad__price .ad__price-span::before {
+    width: 120px;
+  }
+}
+
 .ad .ad__line {
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
@@ -1774,15 +1844,24 @@ body .wholeWrapper {
   top: 85%;
   left: 50%;
   color: #fff;
-  font-size: 1rem;
+  font-size: 12px;
+  background-color: rgba(0, 0, 0, 0.6);
   font-weight: bold;
-  width: 100%;
+  padding: 5px 10px;
   font-family: "Rubik", "Poppins", sans-serif;
+  margin: 5px auto;
 }
 
 @media only screen and (orientation: portrait) and (min-width: 640px) {
   .ad .ad__line {
-    font-size: 24px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (orientation: portrait) and (min-width: 768px) {
+  .ad .ad__line {
+    font-size: 16px;
+    padding: 10px 15px;
   }
 }
 
@@ -1800,19 +1879,14 @@ body .wholeWrapper {
 
 @media only screen and (orientation: landscape) and (min-width: 768px) {
   .ad .ad__line {
-    font-size: 18px;
+    font-size: 16px;
+    padding: 10px 15px;
   }
 }
 
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
   .ad .ad__line {
-    font-size: 24px;
-  }
-}
-
-@media only screen and (orientation: landscape) and (min-width: 1248px) {
-  .ad .ad__line {
-    font-size: 28px;
+    font-size: 22px;
   }
 }
 
@@ -2297,7 +2371,7 @@ body .wholeWrapper {
 }
 
 .picture .picture__wrapper:nth-of-type(1) {
-  background-image: url("../imgKarina/instagram1.jpg");
+  background-image: url("../imgKarina/instagram1.png");
   background-position: center;
   background-size: cover;
 }
@@ -2643,19 +2717,25 @@ body .wholeWrapper {
 
 @media only screen and (orientation: portrait) and (min-width: 640px) {
   .footer .footer__contact .footer__list .footer__item .footer__link {
-    font-size: 16px;
+    font-size: 10px;
   }
 }
 
 @media only screen and (orientation: portrait) and (min-width: 1024px) {
   .footer .footer__contact .footer__list .footer__item .footer__link {
-    font-size: 20px;
+    font-size: 10px;
   }
 }
 
 @media only screen and (orientation: landscape) and (min-width: 768px) {
   .footer .footer__contact .footer__list .footer__item .footer__link {
-    font-size: 14px;
+    font-size: 10px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1248px) {
+  .footer .footer__contact .footer__list .footer__item .footer__link {
+    font-size: 11px;
   }
 }
 
@@ -3245,7 +3325,7 @@ body .wholeWrapper {
   font-family: "Rubik", "Poppins", sans-serif;
   color: #c6ac85;
   font-size: 14px;
-  padding: 30px 0 30px 40px;
+  padding: 30px 10px 30px 10px;
 }
 
 @media only screen and (orientation: landscape) and (min-width: 1248px) {
@@ -3263,7 +3343,7 @@ body .wholeWrapper {
 
 .contact .contact__container .contact__information .contact__info-container .contact__info .contact__info-bold {
   font-weight: bold;
-  padding: 0 15px 0 5px;
+  padding: 0 10px 0 5px;
 }
 
 .contact .contact__container .contact__wrap {
@@ -3513,7 +3593,7 @@ body .wholeWrapper {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 80vw;
+    width: 70vw;
     margin: 10vh auto;
   }
 }
@@ -3559,43 +3639,69 @@ body .wholeWrapper {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 80vw;
-  height: 5vh;
+  width: 80%;
+  height: 2px;
   margin: 0 auto;
   color: #202031;
   border-bottom: 1px solid #c6ac85;
 }
 
-@media only screen and (orientation: portrait) and (min-width: 768px) {
-  .priceTag .price__header-wrapper {
-    width: 70vw;
-    height: 10vh;
-  }
+.priceTag .price__kind-of-service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 15px auto;
+  width: 100%;
 }
 
-@media only screen and (orientation: landscape) and (min-width: 530px) {
-  .priceTag .price__header-wrapper {
-    width: 80vw;
-    height: 25vh;
+@media only screen and (orientation: portrait) and (min-width: 768px) {
+  .priceTag .price__kind-of-service {
+    margin: 25px auto;
   }
 }
 
 @media only screen and (orientation: landscape) and (min-width: 768px) {
-  .priceTag .price__header-wrapper {
-    width: 60vw;
-    height: 5vh;
+  .priceTag .price__kind-of-service {
+    margin: 25px auto;
   }
 }
 
-@media only screen and (orientation: landscape) and (min-width: 1024px) {
-  .priceTag .price__header-wrapper {
-    width: 70vw;
-    height: 0vh;
+.priceTag .price__kind-of-service .price__kind-title {
+  font-family: "Playfair Display SC", serif;
+  font-size: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #c6ac85;
+}
+
+@media only screen and (orientation: portrait) and (min-width: 768px) {
+  .priceTag .price__kind-of-service .price__kind-title {
+    font-size: 18px;
   }
 }
 
-.priceTag .price__header-wrapper .price__header {
-  font-family: "Rubik", "Poppins", sans-serif;
+@media only screen and (orientation: landscape) and (min-width: 768px) {
+  .priceTag .price__kind-of-service .price__kind-title {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1248px) {
+  .priceTag .price__kind-of-service .price__kind-title {
+    width: 7%;
+    text-align: center;
+    font-size: 22px;
+    padding-bottom: 15px;
+  }
 }
 
 .priceTag .price__div {
@@ -3615,34 +3721,35 @@ body .wholeWrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 12vh;
+  padding: 15px 10px;
   width: 80vw;
   margin: 0 auto;
 }
 
 @media only screen and (orientation: portrait) and (min-width: 768px) {
   .priceTag .price__div {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    height: 15vh;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
-    width: 30vw;
-    margin: 0;
+    width: 60vw;
+    margin: 0 auto;
   }
 }
 
 @media only screen and (orientation: landscape) and (min-width: 530px) {
   .priceTag .price__div {
-    height: 20vh;
     width: 70vw;
   }
 }
 
 @media only screen and (orientation: landscape) and (min-width: 768px) {
   .priceTag .price__div {
-    height: 13vh;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
   }
 }
 
@@ -3651,12 +3758,6 @@ body .wholeWrapper {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    height: 15vh;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    width: 30vw;
-    margin: 0;
   }
 }
 
@@ -3689,7 +3790,7 @@ body .wholeWrapper {
 
 @media only screen and (orientation: landscape) and (min-width: 768px) {
   .priceTag .price__div .price__line {
-    padding-left: 10vw;
+    padding-left: 5vw;
   }
 }
 
@@ -3733,6 +3834,10 @@ body .wholeWrapper {
     font-weight: bold;
     font-size: 24px;
   }
+}
+
+.priceTag .price__div-margin {
+  margin-bottom: 50px;
 }
 
 .gallery__background {
@@ -3819,8 +3924,11 @@ body .wholeWrapper {
   width: 90vw;
   height: 90vw;
   margin: 20px auto;
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  opacity: 1;
+  -webkit-transform: translate(0);
+          transform: translate(0);
 }
 
 @media only screen and (orientation: portrait) and (min-width: 768px) {
@@ -3900,6 +4008,7 @@ body .wholeWrapper {
   background-image: url("../imgKarina/gallery3.jpg");
   background-position: center;
   background-size: cover;
+  background-position: 65% 35%;
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(4) {
@@ -4124,11 +4233,22 @@ body .wholeWrapper {
   }
 }
 
-.wholeGalleryWrapper .galleryPhotos .gallery__wrapper--fadeIn {
-  display: none;
+.wholeGalleryWrapper .galleryPhotos .gallery__wrapper--fadeIn-one {
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
   opacity: 0;
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
+}
+
+.wholeGalleryWrapper .galleryPhotos .gallery__wrapper--fadeIn-two {
+  -webkit-transform: translate(-20px);
+          transform: translate(-20px);
+  opacity: 0;
+}
+
+.wholeGalleryWrapper .galleryPhotos .gallery__wrapper--fadeIn-three {
+  -webkit-transform: translate(-20px);
+          transform: translate(-20px);
+  opacity: 0;
 }
 
 .wholeGalleryWrapper .galleryPhotos .active {

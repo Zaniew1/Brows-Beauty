@@ -99,34 +99,54 @@ enlarges.forEach((enlarge, index) => {
     })
 })
 });
-
-
-
-
-let pictureIndex = 0;
-
+    const allPictures = [...document.querySelectorAll('.gallery__wrapper')];
+    const animatedPictureOne = document.querySelector('.gallery__wrapper--fadeIn-one');
+    const animatedPictureTwo = document.querySelector('.gallery__wrapper--fadeIn-two');
+    const animatedPictureThree = document.querySelector('.gallery__wrapper--fadeIn-three');
 document.addEventListener('scroll', () =>
 {
-    const pictures = [...document.querySelectorAll('.gallery__wrapper--fadeIn')];
-    const wrappers = [...document.querySelectorAll('.gallery__wrapper')];
-    const footer = document.querySelector('.footer__contact');
-    const footerHeight = footer.outerHeight;
-    const distanceToTop = footer.getBoundingClientRect().top;
+    const windowScrollValue = window.scrollY;
     const windowHeight = window.innerHeight;
-    const windowTop = window.screenTop;
-    const distanceTop = (distanceToTop - windowTop) ;
-    const animation = document.querySelector('.gallery__animation')
-
-    if(pictureIndex >= pictures.length) return animation.style.display = "none"
-    else if(distanceToTop <= (windowHeight ) && pictureIndex < pictures.length)
-        {
-            animation.style.display = "flex"
-
-            for (let i=0; i < 3; i++)
-            {
-                pictures[`${pictureIndex++}`].classList.add('show');
-            }
+    const allAnimatedPictureOne = [...document.querySelectorAll('.gallery__wrapper--fadeIn-one')];
+    const allAnimatedPictureTwo = [...document.querySelectorAll('.gallery__wrapper--fadeIn-two')];
+    const allAnimatedPictureThree = [...document.querySelectorAll('.gallery__wrapper--fadeIn-three')];
+    
+    const animatedPictureHeightOne = animatedPictureOne.offsetHeight;
+    const animatedPictureDistanceFromTopOne = animatedPictureOne.offsetTop;
+    const animatedPictureHeightTwo = animatedPictureTwo.offsetHeight;
+    const animatedPictureDistanceFromTopTwo = animatedPictureTwo.offsetTop;
+    const animatedPictureHeightThree = animatedPictureThree.offsetHeight;
+    const animatedPictureDistanceFromTopThree = animatedPictureThree.offsetTop;
+    if(window.innerWidth >= 1024 )
+    {
+        if(windowScrollValue > animatedPictureDistanceFromTopOne - windowHeight + animatedPictureHeightOne ){
+            allAnimatedPictureOne.forEach((element, index) => {
+                element.classList.remove('gallery__wrapper--fadeIn-one');
+                let seconds = index/4;
+                element.style.transitionDelay = `${seconds}s`;
+            });   
         }
+        if(windowScrollValue > animatedPictureDistanceFromTopTwo - windowHeight + animatedPictureHeightTwo  ){
+            allAnimatedPictureTwo.forEach((element, index) => {
+                element.classList.remove('gallery__wrapper--fadeIn-two');
+                let seconds = index/4;
+                element.style.transitionDelay = `${seconds}s`;
+            }); 
+        }
+        if(windowScrollValue > animatedPictureDistanceFromTopThree - windowHeight + animatedPictureHeightThree ){
+            allAnimatedPictureThree.forEach((element, index) => {
+                element.classList.remove('gallery__wrapper--fadeIn-three');
+                let seconds = index/4;
+                element.style.transitionDelay = `${seconds}s`;
+            }); 
+        }
+    }
+    else{
+        allPictures.forEach(picture =>{
+            picture.classList.remove('gallery__wrapper--fadeIn-one');
+            picture.classList.remove('gallery__wrapper--fadeIn-two');
+            picture.classList.remove('gallery__wrapper--fadeIn-three');
+        })
 
+    }
 })
-
