@@ -1,3 +1,5 @@
+// window.location.reload(true)
+
 const burger = document.querySelector('.nav__bar')
 const aside = document.querySelector('.aside')
 
