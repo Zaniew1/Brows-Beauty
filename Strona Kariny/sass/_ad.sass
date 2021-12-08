@@ -21,6 +21,7 @@
         width: 50vw
         height: 50vh
     .ad__new
+        display: none
         position: absolute
         top: 20%
         left: 50%
@@ -48,6 +49,7 @@
         @include mq-land(desktop)
             font-size: 38px
     .ad__price
+        display: none
         @include position-center
         color: $white-bgc
         font-weight: bold
@@ -107,11 +109,11 @@
     .ad__line
         position: absolute
         transform: translate(-50%, -50%)
-        top: 85%
+        top: 20%
         left: 50%
         color: $white-bgc
         font-size: 12px
-        background-color: rgba(0,0,0,0.6)
+        background-color: rgba(0,0,0,0.7)
         font-weight: bold
         padding: 5px 10px
         font-family: $family-rubik

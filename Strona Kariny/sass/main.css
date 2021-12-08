@@ -898,7 +898,7 @@ body .wholeWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
+  width: 90%;
   height: 100%;
   z-index: 4;
   opacity: .6;
@@ -906,17 +906,19 @@ body .wholeWrapper {
 
 @media only screen and (orientation: landscape) and (min-width: 1248px) {
   .banner .banner__picture {
-    width: 50%;
+    width: 90%;
   }
 }
 
 @media only screen and (orientation: landscape) and (min-width: 1440px) {
   .banner .banner__picture {
-    width: 45%;
+    width: 75%;
   }
 }
 
 .banner .banner__picture .banner__img {
+  -o-object-fit: center;
+     object-fit: center;
   width: 100%;
   height: 100%;
 }
@@ -1653,6 +1655,7 @@ body .wholeWrapper {
 }
 
 .ad .ad__new {
+  display: none;
   position: absolute;
   top: 20%;
   left: 50%;
@@ -1711,6 +1714,7 @@ body .wholeWrapper {
 }
 
 .ad .ad__price {
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1841,11 +1845,11 @@ body .wholeWrapper {
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  top: 85%;
+  top: 20%;
   left: 50%;
   color: #fff;
   font-size: 12px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
   font-weight: bold;
   padding: 5px 10px;
   font-family: "Rubik", "Poppins", sans-serif;
@@ -2371,7 +2375,7 @@ body .wholeWrapper {
 }
 
 .picture .picture__wrapper:nth-of-type(1) {
-  background-image: url("../imgKarina/instagram1.png");
+  background-image: url("../imgKarina/instagram1.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -2383,13 +2387,13 @@ body .wholeWrapper {
 }
 
 .picture .picture__wrapper:nth-of-type(3) {
-  background-image: url("../imgKarina/instagram3.jpg");
+  background-image: url("../imgKarina/instagram3.JPG");
   background-position: center;
   background-size: cover;
 }
 
 .picture .picture__wrapper:nth-of-type(4) {
-  background-image: url("../imgKarina/instagram4.jpg");
+  background-image: url("../imgKarina/instagram4.JPG");
   background-position: center;
   background-size: cover;
 }
@@ -3993,7 +3997,7 @@ body .wholeWrapper {
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(1) {
-  background-image: url("../imgKarina/gallery1.jpg");
+  background-image: url("../imgKarina/gallery1.JPG");
   background-position: center;
   background-size: cover;
 }
@@ -4005,26 +4009,26 @@ body .wholeWrapper {
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(3) {
-  background-image: url("../imgKarina/gallery3.jpg");
+  background-image: url("../imgKarina/gallery3.JPG");
   background-position: center;
   background-size: cover;
   background-position: 65% 35%;
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(4) {
-  background-image: url("../imgKarina/gallery4.jpg");
+  background-image: url("../imgKarina/gallery4.JPG");
   background-position: center;
   background-size: cover;
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(5) {
-  background-image: url("../imgKarina/gallery5.jpg");
+  background-image: url("../imgKarina/gallery5.JPG");
   background-position: center;
   background-size: cover;
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(6) {
-  background-image: url("../imgKarina/gallery6.jpg");
+  background-image: url("../imgKarina/gallery6.JPG");
   background-position: center;
   background-size: cover;
 }
@@ -4036,19 +4040,19 @@ body .wholeWrapper {
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(8) {
-  background-image: url("../imgKarina/gallery8.jpg");
+  background-image: url("../imgKarina/gallery8.JPG");
   background-position: center;
   background-size: cover;
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(9) {
-  background-image: url("../imgKarina/gallery9.jpg");
+  background-image: url("../imgKarina/gallery9.JPG");
   background-position: center;
   background-size: cover;
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(10) {
-  background-image: url("../imgKarina/gallery10.jpg");
+  background-image: url("../imgKarina/gallery10.JPG");
   background-position: center;
   background-size: cover;
 }
@@ -4060,25 +4064,25 @@ body .wholeWrapper {
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(12) {
-  background-image: url("../imgKarina/gallery12.jpg");
+  background-image: url("../imgKarina/gallery12.JPG");
   background-position: center;
   background-size: cover;
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(13) {
-  background-image: url("../imgKarina/gallery13.jpg");
+  background-image: url("../imgKarina/gallery13.JPG");
   background-position: center;
   background-size: cover;
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(14) {
-  background-image: url("../imgKarina/gallery14.jpg");
+  background-image: url("../imgKarina/gallery14.JPG");
   background-position: center;
   background-size: cover;
 }
 
 .wholeGalleryWrapper .galleryPhotos .gallery__wrapper:nth-of-type(15) {
-  background-image: url("../imgKarina/gallery15.jpg");
+  background-image: url("../imgKarina/gallery15.JPG");
   background-position: center;
   background-size: cover;
 }
