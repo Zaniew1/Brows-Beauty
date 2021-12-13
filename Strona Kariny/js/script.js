@@ -1,4 +1,6 @@
-// window.location.reload(true)
+window.addEventListener('DOMContentLoaded', ()=>{
+
+
 
 const burger = document.querySelector('.nav__bar')
 const aside = document.querySelector('.aside')
@@ -152,3 +154,4 @@ document.addEventListener('scroll', () =>
 
     }
 })
+    })
