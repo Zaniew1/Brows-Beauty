@@ -1,0 +1,146 @@
+.gallery
+    @include flex(center, center, row)
+    flex-wrap: wrap
+    height: 50vh
+    width: 100%
+    background-color: $white-bgc
+    margin: 5vh auto
+    @include mq(tablet-wide)
+        height: 30vh
+    @include mq-land(phone)
+        width: 80vw
+        height: 80vh
+    @include mq-land(tablet)
+        height: 50vh
+        width: 70vw
+        min-height: 300px
+    @include mq-land(tablet-wide)
+        height: 35vh
+        width: 80vw
+    @include mq-land(desktop-wide)
+        height: 40vh
+        width: 70vw
+    .gallery__line
+        text-align: center
+        width: 100%
+        height: 5%
+        font-family: $family-playfair
+        color:  $gold-bgc
+        @include mq(phablet)
+            font-size: 22px
+        @include mq(tablet)
+            font-size: 28px
+        @include mq(tablet-wide)
+            font-size: 26px
+        @include mq-land(tablet)
+            font-size: 18px
+        @include mq-land(tablet-wide)
+            font-size: 22px
+        @include mq-land(desktop)
+            font-size: 18px
+    .gallery__header
+        text-align: center
+        font-size: $font-big
+        font-family: $family-playfair
+        color: $font-color
+        font-weight: lighter
+        text-transform: uppercase
+        line-height: 1.5
+        width: 80%
+        @include mq(phablet)
+            font-size: 36px
+        @include mq(tablet)
+            font-size: 48px
+        @include mq-land(tablet)
+            font-size: 26px
+        @include mq-land(tablet-wide)
+            font-size: 36px
+        @include mq-land(desktop)
+            font-size: 46px
+        &::before
+            content: ""
+            display: block
+            position: absolute
+            left: 15%
+            transform: translate(-50%, -50%)
+            border-bottom: 1px solid #000
+            width: 30px
+            height: 40px
+            @include mq(phablet)
+                height: 60px
+                width: 50px
+            @include mq(tablet)
+                width: 80px
+                height: 80px
+            @include mq(tablet-wide)
+                height: 80px
+                width: 120px
+            @include mq-land(phone)
+                left: 25%
+            @include mq-land(tablet)
+                height: 60px
+                left: 30%
+                width: 50px
+            @include mq-land(tablet-wide)
+                width: 80px
+            @include mq-land(desktop)
+                height: 70px
+        &::after
+            content: ""
+            display:block
+            position: absolute
+            left: 85%
+            transform: translate(-50%, -50%)
+            border-bottom: 1px solid #000
+            width: 30px
+            height: 40px
+            @include mq(phablet)
+                height: 60px
+                width: 50px
+            @include mq(tablet)
+                width: 80px
+                height: 80px
+            @include mq(tablet-wide)
+                height: 80px
+                width: 120px
+            @include mq-land(phone)
+                left: 75%
+            @include mq-land(tablet)
+                height: 60px
+                left: 70%
+                width: 50px
+            @include mq-land(tablet-wide)
+                width: 80px
+            @include mq-land(desktop)
+                height: 70px
+    .gallery__button
+        @include button-style
+        width: 50vw
+        @include mq(phablet)
+            width: 40vw
+        @include mq(tablet)
+            font-size: 16px
+            height: 55px
+        @include mq(tablet-wide)
+            height: 55px
+            font-size: 14px
+            width: 30vw
+        @include mq-land(tablet)
+            width: 30vw
+            font-size: 12px
+        @include mq-land(tablet-wide)
+            width: 20vw
+            font-size: 12px
+            height: 40px
+        @include mq-land(desktop)
+            height: 60px
+            font-size: 14px
+        .gallery__button-link
+            @include flex(center, center, row)
+            width: 100%
+            height: 100%
+            text-decoration: none
+            color: $white-bgc
+        &:hover
+            background-color: $gold-bgc
+            transition: all ease .3s

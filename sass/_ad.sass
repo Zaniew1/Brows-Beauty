@@ -1,0 +1,135 @@
+.ad
+    position: relative
+    width: 90%
+    height: 40vh
+    margin: 10vh auto
+    background-position: center
+    background-size: cover
+    text-align: center
+    @include pictureJpg(ad1)
+    @include mq(tablet-wide)
+        width: 70vw
+    @include mq-land(phone)
+        width: 60vw
+        height: 70vh
+    @include mq-land(tablet)
+        height: 50vh
+        min-height: 300px
+    @include mq-land(desktop)
+        height: 55vh
+    @include mq-land(desktop-wide)
+        width: 50vw
+        height: 50vh
+    .ad__new
+        display: none
+        position: absolute
+        top: 20%
+        left: 50%
+        text-transform: none
+        font-weight: bold
+        transform: translate(-50%, -50%)
+        font-family: $family-over
+        color:  $white-bgc
+        font-size: 16px
+        background-color: rgba(0,0,0,0.6)
+        padding: 5px 10px
+        margin: 10px auto
+        @include mq(phone)
+            font-size: 16px
+        @include mq(tablet)
+            font-size: 24px
+        @include mq(tablet-wide)
+            font-size: 32px
+        @include mq-land(phablet)
+            font-size: 16px
+        @include mq-land(tablet)
+            font-size: 24px
+        @include mq-land(tablet-wide)
+            font-size: 32px
+        @include mq-land(desktop)
+            font-size: 38px
+    .ad__price
+        display: none
+        @include position-center
+        color: $white-bgc
+        font-weight: bold
+        font-size: $font-large
+        font-family: $family-playfair
+        margin: 5px auto
+        @include mq(phone)
+            font-size: 40px
+        @include mq(phablet)
+            font-size: 48px
+        @include mq(tablet)
+            font-size: 62px
+        @include mq(tablet-wide)
+            font-size: 66px
+        @include mq-land(phablet)
+            font-size: 40px
+        @include mq-land(tablet)
+            font-size: 50px
+        @include mq-land(tablet-wide)
+            font-size: 60px
+        @include mq-land(desktop)
+            font-size: 80px
+        .ad__price-span
+            position: relative
+            &::after
+                top: 50%
+                left: 50%
+                position: absolute
+                content: ''
+                display: block
+                width: 60px
+                height: 5px
+                background-color: red
+                transform:  translate( -50% , 150% ) rotate(30deg)
+                @include mq(tablet)
+                    width: 80px
+                @include mq-land(tablet)
+                    width: 80px
+                @include mq-land(desktop)
+                    width: 120px
+            &::before
+                top: 50%
+                left: 50%
+                position: absolute
+                content: ''
+                display: block
+                width: 60px
+                height: 5px
+                background-color: red
+                transform:  translate( -50% , 150% ) rotate(150deg)
+                @include mq(tablet)
+                    width: 80px
+                @include mq-land(tablet)
+                    width: 80px
+                @include mq-land(desktop)
+                    width: 120px
+    .ad__line
+        position: absolute
+        transform: translate(-50%, -50%)
+        top: 20%
+        left: 50%
+        color: $white-bgc
+        font-size: 12px
+        background-color: rgba(0,0,0,0.7)
+        font-weight: bold
+        padding: 5px 10px
+        font-family: $family-rubik
+        margin: 5px auto
+        @include mq(phablet)
+            font-size: 14px
+        @include mq(tablet)
+            font-size: 16px
+            padding: 10px 15px
+        @include mq(tablet-wide)
+            font-size: 26px
+        @include mq-land(phablet)
+            font-size: 14px
+        @include mq-land(tablet)
+            font-size: 16px
+            padding: 10px 15px
+        @include mq-land(tablet-wide)
+            font-size: 22px
+       

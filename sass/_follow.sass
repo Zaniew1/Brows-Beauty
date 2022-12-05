@@ -1,0 +1,69 @@
+.follow
+    @include flex(center, center, column)
+    position: relative
+    margin: 10vh auto
+    width: 80vw
+    height: 20vh
+    background-color: $white-bgc
+    transition: .4s ease-in-out
+    @include mq(tablet)
+        height: 15vh
+        width: 70vw
+    @include mq(tablet-wide)
+        width: 50vw
+        height: 10vh
+    @include mq-land(phone)
+        width: 50vw
+        height: 25vh
+    @include mq-land(tablet)
+        width: 35vw
+        height: 10vh
+        min-height: 80px
+    @include mq-land(desktop-wide)
+        width: 20vw
+    &:hover
+        cursor: pointer
+        background-color: $gold-bgc
+    &:hover .follow__link
+        color: #fff
+    &:hover .follow__icon
+        color: #fff
+    .follow__link
+        @include flex(center, center, column)
+        width: 100%
+        height: 100%
+        text-decoration: none
+        color: $font-color
+        @include mq-land(tablet-wide)
+            flex-direction: row
+        .follow__line
+            font-size: $font-xsmall
+            font-family: $family-rubik
+            text-transform: uppercase
+            font-weight: 500
+            padding-left: 5px
+            letter-spacing: 3px
+            text-align: center
+            font-weight: bold
+            line-height: 5
+            @include mq(phablet)
+                font-size: 14px
+            @include mq(tablet)
+                font-size: 16px
+                line-height: 4
+            @include mq(tablet-wide)
+                font-size: 18px
+                line-height: 3
+            @include mq-land(phone)
+                font-size: 10px
+                line-height: 3
+            @include mq-land(desktop)
+                font-size: 10px
+            @include mq-land(desktop-wide)
+                font-size: 10px
+            @include mq-land(big-desktop)
+                font-size: 12px
+            .follow__icon
+                margin-right: 10px
+                @include mq(tablet-wide)
+                    font-size: 24px

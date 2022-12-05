@@ -1,0 +1,218 @@
+.gallery__background
+    display: none
+    filter: blur(5px)
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 5
+    width: 100%
+    height: 100%
+    background-color: rgba(0,0,0,0.8)
+.wholeGalleryWrapper
+    .galleryPhotos
+        @include flex(center, center, column)
+        width: 100vw
+        margin: 50px auto
+        @include mq (tablet)
+            flex-direction: row
+            flex-wrap: wrap
+        @include mq (tablet-wide)
+            width: 90vw
+        @include mq-land(phablet)
+            width: 90vw
+            flex-direction: row
+            flex-wrap: wrap
+        @include mq-land(tablet-wide)
+            width: 85vw
+        .gallery__wrapper
+            @include flex(center, center, row)
+            position: relative
+            width: 90vw
+            height: 90vw
+            margin: 20px auto
+            transition: .5s ease-in-out
+            opacity: 1
+            transform: translate(0)
+            @include mq(tablet)
+                width: 45vw
+                height: 30vh
+            @include mq (tablet-wide)
+                width: 28vw
+                height: 20vh
+            @include mq-land(phone)
+                width: 80vw
+                height: 110vh
+            @include mq-land(phablet)
+                width: 40vw
+                height: 70vh
+            @include mq-land(tablet)
+                width: 27vw
+                height: 27vw
+            @include mq-land(desktop)
+                width: 27vw
+                height: 27vw
+            &:hover .gallery__pink
+                background-color: rgba( 250, 239, 237, 0.7)
+                content: ""
+                width: 100%
+                height: 100%
+                transition: .3s ease-in-out
+            &:hover .gallery__info
+                height: 10%
+                opacity: 1
+            &:hover .gallery__enlarge-div
+                top: 50%
+                opacity: 1
+            &:nth-of-type(1)
+                @include pictureJpg (gallery1)
+            &:nth-of-type(2)
+                @include pictureJpg (gallery2)
+            &:nth-of-type(3)
+                @include pictureJpg (gallery3)
+            &:nth-of-type(4)
+                @include pictureJpg (gallery4)
+            &:nth-of-type(5)
+                @include pictureJpg(gallery5)
+            &:nth-of-type(6)
+                @include pictureJpg (gallery6)
+            &:nth-of-type(7)
+                @include pictureJpg (gallery7)
+            &:nth-of-type(8)
+                @include pictureJpg (gallery8)
+            &:nth-of-type(9)
+                @include pictureJpg (gallery9)
+            &:nth-of-type(10)
+                @include pictureJpg (gallery10)
+            &:nth-of-type(11)
+                @include pictureJpg(gallery11)
+            &:nth-of-type(12)
+                @include pictureJpg (gallery12)
+            &:nth-of-type(13)
+                @include pictureJpg (gallery13)
+            &:nth-of-type(14)
+                @include pictureJpg(gallery14)
+            &:nth-of-type(15)
+                @include pictureJpg (gallery15)
+            .gallery__enlarge-div
+                @include position-center
+                top: 0
+                width: 60px
+                height: 60px
+                opacity: 0
+                background-color: $white-bgc
+                border-radius: 50%
+                transition: 0.3s ease-in-out
+                @include mq-land(desktop)
+                    width: 80px
+                    height: 80px
+                @include mq-land(desktop-wide)
+                    width: 90px
+                    height: 90px
+                &:hover 
+                    background-color: $font-color
+                .gallery__enlarge
+                    @include position-center
+                    color: $gold-bgc
+                    font-size: 24px
+                    @include mq-land(desktop)
+                        font-size: 28px
+                    @include mq-land(desktop-wide)
+                        font-size: 42px
+            .gallery__info
+                @include flex(center, center, row)
+                @include position-center
+                @include contact__line
+                font-weight: bold
+                font-size: 11px
+                text-transform: uppercase
+                background-color: $gold-bgc
+                width: 50%
+                height: 0
+                top: 95%
+                opacity: 0
+                color: $white-bgc
+                transition: height 0.3s ease-in-out
+                text-align: center
+                @include mq (tablet)
+                    font-size: 10px
+                @include mq-land (tablet)
+                    font-size: 10px
+                @include mq-land(desktop)
+                    font-size: 12px
+                @include mq-land(desktop-wide)
+                    font-size: 14px
+                @include mq-land(big-desktop)
+                    font-size: 16px
+            .gallery__x
+                opacity: 0
+                position: absolute
+                top: -3%
+                right: -3%
+                border-radius: 50
+                font-size: 22px
+                color: $white-bgc
+                @include mq(tablet)
+                    font-size: 32px
+                @include mq(tablet-wide)
+                @include mq-land(tablet)
+                    font-size: 32px 
+                @include mq-land(desktop)
+                    font-size: 36px
+        .gallery__wrapper--fadeIn-one
+            transform: translateY(50px)
+            opacity: 0
+        .gallery__wrapper--fadeIn-two
+            transform: translate(-20px)
+            opacity: 0
+        .gallery__wrapper--fadeIn-three
+            transform: translate(-20px)
+            opacity: 0
+        .active
+            @include position-center
+            position: fixed
+            z-index: 10
+            content: none
+            transition: .4s ease-in-out
+            @include mq(tablet)
+                width: 600px
+                height: 600px
+            @include mq(tablet-wide)
+                width: 700px
+                height: 700px
+            @include mq-land(tablet)
+                width: 40vw
+                height: 40vw
+            @include mq-land(desktop-wide)
+                width: 35vw
+                height: 35vw
+            @include mq-land(big-desktop)
+                width: 30vw
+                height: 30vw
+        .show
+            display: flex
+            opacity: 1
+        .gallery__animation
+            @include flex(center, center, row)
+            display: none
+            opacity: 0
+            width: 100%
+            height: 100px
+            font-size: 30px
+            color: $gold-bgc
+            @include mq(tablet)
+            @include mq-land(tablet)
+            @include mq-land(desktop)
+                font-size: 50px
+            .gallery__animation-span
+                @include flex(center, center, row)
+                width: 50px
+                height: 50px
+                background-color: $white-bgc
+                @include mq(tablet)
+                @include mq-land(tablet)
+                @include mq-land(desktop)
+                    width: 100px
+                    height: 100px
+                .gallery__animation-circle
+                    animation: rotate 1s infinite
+       

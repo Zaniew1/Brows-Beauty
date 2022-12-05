@@ -1,0 +1,83 @@
+.aside 
+    @include flex(space-around, center, column)
+    transition: ease 0.4s
+    opacity: 0
+    visibility: hidden
+    background-color: $font-color
+    color: $white-bgc
+    position: fixed
+    width: 100%
+    height: 0vh
+    z-index: 5
+    @include mq-land(phone)
+        justify-content: center
+    .aside__logo
+        @include flex(center, center, column)
+        margin-top: 60px
+        @include mq-land(phone)
+            margin-top: 10px
+        .aside__icon
+            color: $gold-bgc
+            font-size: $font-large
+            @include mq(phablet)
+                font-size: 50px
+        .aside__header 
+            @include h1-style
+            text-transform: uppercase
+            font-weight: bold
+            letter-spacing: 2px
+            margin: 0px
+            font-size: $font-medium
+            color: $white-bgc
+            font-family: $family-rubik
+            @include mq(phablet)
+                font-size: 30px
+        .aside__name
+            @include h2-style
+            color: $gold-bgc
+            font-size: $font-xsmall
+            @include mq(phablet)
+                font-size: 18px
+    .aside__menu
+        margin: 50px 80px 150px 0px
+        @include mq-land(phone)
+            margin: 35px
+        .aside__list
+            list-style-type: none
+            .aside__item
+                font-family: $family-rubik
+                font-size: $font-big
+                padding-bottom: 5px
+                @include mq(phablet)
+                    font-size: 30px
+                .aside__link 
+                    color: #fff
+                    text-decoration: none
+                    &:hover
+                        color: $gold-bgc
+                .aside__menu-icon
+                    color: $gold-bgc
+                    padding: 0 5px
+                &:nth-of-type(4)
+                padding: 5px 0 0 15px
+                font-size: $font-xmedium
+    .aside__socials
+        .aside__socials-link
+            .aside__socials-icon
+                padding: 0 5px
+                color: $gold-bgc
+                @include mq(phablet)
+                    font-size: 22px
+    .aside__close
+        position: absolute
+        width: 50px
+        height: 50px
+        top: 5%
+        right: 5%
+        .aside__close-icon
+            @include position-center
+            color: $gold-bgc
+            font-size: $font-big
+            @include mq(phablet)
+                font-size: 30px
+

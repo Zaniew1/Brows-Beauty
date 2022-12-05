@@ -1,0 +1,254 @@
+.header
+    .sticky
+        @include flex(space-between, center, row)
+        display: none
+        position: fixed
+        width: 100%
+        height: 6vh
+        background-color: $white-bgc
+        z-index: 6
+        transition: 0.4s ease-in-out
+        margin: 0 auto
+        @include mq-land(tablet)
+            height: 7vh
+            min-height: 65px
+        .sticky__logo
+            @include flex(center, center, column)
+            height: 100%
+            width: 20%
+            margin-left: 2vw
+            .sticky__icon
+                color: $gold-bgc
+                font-size: 26px
+                @include mq-land(tablet)
+                    font-size: 16px
+                @include mq-land(desktop)
+                    font-size: 28px
+            .sticky__header
+                text-transform: uppercase
+                font-weight: bold
+                font-size: 16px
+                color: $gray-bgc
+                font-family: $family-rubik
+                @include mq(tablet-wide)
+                    font-size: 18px
+                @include mq-land(tablet)
+                    font-size: 10px
+                @include mq-land(desktop)
+                    font-size: 14px
+            .sticky__name
+                @include h2-style
+                font-size: $font-xsmall
+                @include mq(tablet-wide)
+                    font-size: 14px
+                @include mq-land(tablet)
+                    font-size: 6px
+                @include mq-land(desktop)
+                    font-size: 10px
+        .sticky__nav
+            .sticky__list
+                display: flex
+                padding: 0 70px
+                list-style-type: none
+                .sticky__item
+                    padding: 0 20px
+                    font-size: $font-small
+                    font-family: $family-rubik
+                    text-transform: uppercase
+                    font-weight: bold
+                    @include mq(tablet-wide)
+                        line-height: 2
+                        font-size: 12px
+                    @include mq-land(tablet)
+                        line-height: 2
+                        font-size: 10px
+                    .sticky__link
+                        color: $font-color
+                        text-decoration: none
+                        &:hover
+                            color: $gold-bgc
+                    .sticky__number-icon
+                        color: $gold-bgc
+                        font-size: $font-small
+                        padding-right: 5px
+                        @include mq(tablet-wide)
+                            font-size: 22px
+    .display__sticky
+        display: flex
+    .display__nav-logo
+        display: none
+        opacity: 0 
+    .nav
+        @include flex (space-between, center, row)
+        height: 35vh
+        width: 100%
+        min-width: 180px
+        @include mq(phone)
+            height: 25vh
+        @include mq(tablet)
+            justify-content: center
+            height: 20vh
+        @include mq-land(phone)
+            height: 30vh
+        @include mq-land(tablet)
+            height: 20vh
+            min-height: 150px
+        @include mq-land(tablet-wide)
+            height: 20vh
+        @include mq-land(desktop)
+            position: relative
+            background-color: #fff
+            width: 95vw
+            margin: 0 auto
+            height: 15vh   
+        .nav__logo
+            @include flex(center, center, column) 
+            background-color: transparent
+            height: 70%
+            width: 50%
+            margin-left: 5vw
+            @include mq(tablet)
+                width: 40%
+                height: 60%
+                margin: 0 5vw 0 0
+            @include mq-land(tablet)
+                width: 30%
+            @include mq-land(desktop)
+                position: absolute
+                top: 50%
+                left: 45%
+                transform: translate(-50%, -50%)
+            @include mq-land(desktop-wide)
+                width: 48.5%
+            .nav__logo-wrapper
+                @include flex(center, center, column)
+                position: absolute
+                .nav__icon
+                    padding-top: 15px
+                    color: $gray-bgc
+                    font-size: $font-big
+                    font-weight: lighter
+                    @include mq(phablet)
+                        font-size: 32px
+                    @include mq(tablet)
+                        font-size: 38px
+                    @include mq(tablet-wide)
+                        font-size: 48px
+                    @include mq-land(tablet-wide)
+                        font-size: 38px
+                    @include mq-land(desktop)
+                        font-size: 60px
+                        color: $gold-bgc
+                    @include mq-land(desktop-wide)
+                        font-size: 80px
+                .nav__header
+                    @include h1-style
+                    color: $gray-bgc
+                    font-family: $family-rubik
+                    font-size: $font-medium
+                    @include mq(phablet)
+                        font-size: 18px
+                    @include mq(tablet)
+                        font-size: 20px
+                    @include mq(tablet-wide)
+                        font-size: 22px
+                    @include mq-land(tablet-wide)
+                        font-size: 16px
+                    @include mq-land(desktop)
+                        font-size: 18px
+                    @include mq-land(desktop-wide)
+                        font-size: 22px
+                .nav__name
+                    @include h2-style
+                    color: $gray-bgc
+                    font-size: $font-xsmall
+                    @include mq(phablet)
+                        font-size: 12px
+                    @include mq(tablet)
+                        font-size: 14px
+                    @include mq-land(tablet-wide)
+                        font-size: 10px
+                    @include mq-land(desktop)
+                        font-size: 14px
+        .nav__bar
+            width: 30px
+            height: 30px
+            background-color: $gray-bgc
+            margin-right: 10vw
+            position: relative
+            @include mq(phablet)
+                width: 40px
+                height: 40px
+            @include mq(tablet)
+                display: none
+            @include mq-land(tablet)
+                display: none
+            .nav__bar-icon
+                @include position-center
+                font-size: $font-small
+                color: #fff
+                @include mq(phablet)
+                    font-size: 16px
+        .nav__wrapper
+            display: none
+            @include mq(tablet)
+                display: flex
+            @include mq-land(tablet)
+                display: flex
+            @include mq-land(desktop)
+                position: absolute
+                top: 50%
+                left: 75%
+                transform: translate(-50%, -50%)
+            .nav__list
+                @include flex(space-between, center, row)
+                display: none
+                list-style-type: none
+                padding-right: 35px
+                width: 50vw
+                @include mq(tablet)
+                    display: flex
+                @include mq-land(tablet)
+                    display: flex
+                    padding-right: 20px
+                @include mq-land(tablet-wide)
+                    padding-right: 40px
+                    justify-content: flex-end
+                @include mq-land(desktop)
+                    width: 40vw
+
+                .nav__item
+                    font-size: $font-small
+                    font-family: $family-rubik
+                    font-weight: bold
+                    text-transform: uppercase
+                    @include mq(tablet)
+                        line-height: 2
+                        font-size: 11px
+                    @include mq(tablet-wide)
+                        line-height: 5
+                    @include mq-land(tablet-wide)
+                        padding-left: 30px
+                        font-size: 10px
+                    @include mq-land(desktop-wide)
+                        padding-left: 20px
+                        font-size: 14px
+                    .nav__link
+                        color: $font-color
+                        text-decoration: none
+                        transition: .3s ease-in-out
+                        @include mq-land(tablet)
+                            padding: 0 10px
+                        &:hover
+                            color: $gold-bgc
+                            text-decoration: none
+                            border-bottom: 1px $gold-bgc solid
+                            padding-bottom: 10px
+                        .nav__number-icon
+                            color: $gold-bgc
+                            font-size: $font-small
+                            padding-right: 5px
+                            @include mq(tablet)
+                                font-size: 18px
+                            @include mq(tablet-wide)
+                                font-size: 20px

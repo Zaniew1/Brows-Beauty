@@ -1,0 +1,106 @@
+.priceTag
+    @include flex(center, center, column)
+    width: 100%
+    background-color: $white-bgc
+    margin: 5vh auto
+    @include mq (tablet)
+        flex-direction: row
+        flex-wrap: wrap
+        width: 70vw
+        margin: 10vh auto
+    @include mq-land(phone)
+        width: 90vw
+        margin: 10vh auto
+    @include mq-land(tablet)
+        flex-direction: row
+        flex-wrap: wrap
+        width: 70vw
+        margin: 15vh auto
+    @include mq-land(tablet-wide)
+        width: 80vw
+        margin: 10vh auto
+    .price__header-wrapper
+        @include flex(center, center, row)
+        width: 80%
+        height: 2px
+        margin: 0 auto
+        color: $font-color
+        border-bottom: 1px solid $gold-bgc
+    .price__kind-of-service
+        @include flex(center, center,row)
+        margin: 15px auto
+        width: 100%
+        @include mq (tablet)
+            margin: 25px auto
+        @include mq-land (tablet)
+            margin: 25px auto
+        .price__kind-title
+            font-family: $family-playfairSC
+            font-size: 14px
+            padding-bottom: 10px
+            border-bottom: 1px solid $gold-bgc
+            @include mq(tablet)
+                font-size: 18px
+            @include mq-land(tablet)
+                font-size: 18px
+            @include mq-land(desktop)
+                width: 7%
+                text-align: center
+                font-size: 22px
+                padding-bottom: 15px
+    .price__div
+        @include flex(space-between, center, row)
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 15px 10px
+        width: 80vw
+        margin: 0 auto
+        @include mq (tablet)
+            justify-content: space-between
+            flex-grow: 1
+            width: 60vw
+            margin: 0 auto
+        @include mq-land(phone)
+            width: 70vw
+        @include mq-land(tablet)
+            flex-grow: 0
+        @include mq-land(tablet-wide)
+            justify-content: space-between
+        .price__line
+            padding: 0 15px 0 5px
+            font-family: $family-rubik
+            font-size: 12px
+            font-weight: bold
+            color: $font-color
+            @include mq (phone)
+                font-size: 18px
+            @include mq (tablet)
+                padding-left: 40px
+            @include mq (tablet-wide)
+                padding-left: 60px
+                font-size: 20px
+            @include mq-land(tablet)
+                padding-left: 5vw
+            @include mq-land(desktop)
+                font-size: 16px 
+                padding-right: 12vw
+        .price__price
+            font-family: $family-rubik
+            font-size: 16px
+            padding-right: 20px
+            color: $gold-bgc
+            @include mq (phone)
+                font-size: 18px
+            @include mq (tablet)
+                padding-left: 20px
+            @include mq (tablet-wide)
+                padding-left: 60px
+                font-weight: bold
+                font-size: 20px
+            @include mq-land(desktop)
+                padding-right: 5vw
+                font-weight: bold
+                font-size: 24px
+    .price__div-margin
+        margin-bottom: 50px

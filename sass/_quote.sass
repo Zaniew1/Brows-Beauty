@@ -1,0 +1,34 @@
+.quote
+    @include flex(center, center, row)
+    width: 100%
+    height: 20vh
+    @include mq(tablet)
+        height: 15vh
+    @include mq(tablet-wide)
+        height: 20vh
+    @include mq-land(phone)
+        height: 40vh
+    @include mq-land(tablet)
+        height: 30vh
+    @include mq-land(desktop)
+        height: 20vh
+    @include mq-land(desktop-wide)
+        height: 25vh
+    .quote__header
+        text-align: center
+        font-family: $family-dancing
+        font-size: $font-large
+        font-weight: 100
+        margin: 25px
+        @include mq(phablet)
+            font-size: 38px
+        @include mq(tablet)
+            font-size: 48px
+        @include mq(tablet-wide)
+            font-size: 60px
+        @include mq-land(tablet)
+            font-size: 48px
+        @include mq-land(desktop)
+            font-size: 70px
+        
+
